@@ -14,9 +14,9 @@ Have you identified a reproducible problem in the website? We want to hear about
 
 ### Look For an Existing Issue
 
-Before you create a new issue, please do a search in [open issues](https://github.com/SoftwareCats/Roulette/issues) to see if the issue or feature request has already been filed.
+Before you create a new issue, please do a search in [open issues](https://github.com/SoftwareCats/Uno/issues) to see if the issue or feature request has already been filed.
 
-Be sure to scan through the [most popular](https://github.com/SoftwareCats/Roulette/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc+label%3Aenhancement) feature requests.
+Be sure to scan through the [most popular](https://github.com/SoftwareCats/Uno/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc+label%3Aenhancement) feature requests.
 
 If you find your issue already exists, make relevant comments and add your [reaction](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments). Use a reaction in place of a "+1" comment:
 
