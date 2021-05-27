@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/agent/AI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/agent/AI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/agent/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/agent/Agent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/agent/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/agent/Play.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/agent/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/agent/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/ColoredCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/ColoredCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/DrawTwoCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/DrawTwoCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/NumberCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/NumberCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/PackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/PackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/ReverseCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/ReverseCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/SkipCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/SkipCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/WildCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/WildCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/WildDrawFourCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/WildDrawFourCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/util/PointCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/util/PointCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/util/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/util/Validator.java" afterDir="false" />
+    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Move files">
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +37,29 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1622114489" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1622114488" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://D:/Program Files/Java/jdk-11.0.8/lib/src.zip!/java.base/java/util/List.java" root0="SKIP_INSPECTION" />
@@ -84,7 +91,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -132,6 +139,14 @@
       <option name="presentableId" value="Default" />
       <updated>1621945926618</updated>
     </task>
+    <task id="LOCAL-00001" summary="Move files">
+      <created>1622114460783</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622114460783</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,5 +159,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Move files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move files" />
   </component>
 </project>
