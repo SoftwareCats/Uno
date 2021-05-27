@@ -14,13 +14,11 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.deck;
+package io.github.softwarecats.uno.game;
 
-public abstract class ColoredCard extends Card {
+public class Rules {
 
-    protected Color color;
+    public static final int WINNING_POINTS = 500;
 
-    public ColoredCard(Color color) {
-        this.color = color;
-    }
+    public static final Direction STARTING_DIRECTION = Direction.LEFT;
 }

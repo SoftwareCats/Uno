@@ -14,13 +14,16 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.deck;
+package io.github.softwarecats.uno.agent;
 
-public abstract class ColoredCard extends Card {
+import io.github.softwarecats.uno.deck.NullCard;
+import io.github.softwarecats.uno.game.Round;
+import org.jetbrains.annotations.NotNull;
 
-    protected Color color;
+public class Human extends Player {
 
-    public ColoredCard(Color color) {
-        this.color = color;
+    @Override
+    public @NotNull Play play(Round round) {
+        return NullCard.getInstance().getPlay(this);
     }
 }

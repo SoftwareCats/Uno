@@ -14,13 +14,9 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.deck;
+package io.github.softwarecats.uno.game;
 
-public abstract class ColoredCard extends Card {
-
-    protected Color color;
-
-    public ColoredCard(Color color) {
-        this.color = color;
-    }
+public enum Direction {
+    LEFT,
+    RIGHT
 }

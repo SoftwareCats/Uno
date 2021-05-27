@@ -16,11 +16,24 @@
 
 package io.github.softwarecats.uno.deck;
 
-public abstract class ColoredCard extends Card {
+import io.github.softwarecats.uno.agent.Play;
+import io.github.softwarecats.uno.game.Round;
 
-    protected Color color;
+/**
+ * Play nothing.
+ */
+public class NullCard extends Card {
 
-    public ColoredCard(Color color) {
-        this.color = color;
+    private static final NullCard INSTANCE = new NullCard();
+
+    private NullCard() {
+    }
+
+    public static NullCard getInstance() {
+        return INSTANCE;
+    }
+
+    @Override
+    public void performAction(Round round, Play play) {
     }
 }

@@ -14,13 +14,17 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.deck;
+package io.github.softwarecats.uno.util;
 
-public abstract class ColoredCard extends Card {
+import io.github.softwarecats.uno.deck.Card;
+import io.github.softwarecats.uno.deck.Deck;
+import java.util.Random;
 
-    protected Color color;
+public class DrawCard {
 
-    public ColoredCard(Color color) {
-        this.color = color;
+    protected static final Random RNG = new Random();
+
+    public static Card randomCard(Deck deck) {
+        return deck.get(RNG.nextInt(deck.size()));
     }
 }
