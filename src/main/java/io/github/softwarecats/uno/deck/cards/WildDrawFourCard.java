@@ -17,8 +17,8 @@
 package io.github.softwarecats.uno.deck.cards;
 
 import io.github.softwarecats.uno.agent.Play;
+import io.github.softwarecats.uno.deck.event.Event;
 import io.github.softwarecats.uno.game.Round;
-import org.apache.commons.lang3.NotImplementedException;
 
 public class WildDrawFourCard extends WildCard {
 
@@ -26,6 +26,6 @@ public class WildDrawFourCard extends WildCard {
     public void performAction(Round round, Play play) {
         super.performAction(round, play);
 
-        throw new NotImplementedException();
+        round.registerEvent(Event.DRAW_FOUR);
     }
 }

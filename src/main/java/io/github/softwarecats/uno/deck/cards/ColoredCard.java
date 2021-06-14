@@ -16,9 +16,7 @@
 
 package io.github.softwarecats.uno.deck.cards;
 
-import io.github.softwarecats.uno.agent.Play;
 import io.github.softwarecats.uno.deck.Color;
-import io.github.softwarecats.uno.game.Round;
 
 public abstract class ColoredCard extends Card {
 
@@ -26,11 +24,6 @@ public abstract class ColoredCard extends Card {
 
     public ColoredCard(Color color) {
         this.color = color;
-    }
-
-    @Override
-    public void performAction(Round round, Play play) {
-
     }
 
     public Color getColor() {

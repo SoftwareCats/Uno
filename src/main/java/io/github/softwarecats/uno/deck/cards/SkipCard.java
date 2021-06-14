@@ -18,8 +18,8 @@ package io.github.softwarecats.uno.deck.cards;
 
 import io.github.softwarecats.uno.agent.Play;
 import io.github.softwarecats.uno.deck.Color;
+import io.github.softwarecats.uno.deck.event.Event;
 import io.github.softwarecats.uno.game.Round;
-import org.apache.commons.lang3.NotImplementedException;
 
 public class SkipCard extends ColoredCard {
 
@@ -29,6 +29,6 @@ public class SkipCard extends ColoredCard {
 
     @Override
     public void performAction(Round round, Play play) {
-        throw new NotImplementedException();
+        round.registerEvent(Event.SKIP);
     }
 }
