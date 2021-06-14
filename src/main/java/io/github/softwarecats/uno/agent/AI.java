@@ -16,7 +16,8 @@
 
 package io.github.softwarecats.uno.agent;
 
-import io.github.softwarecats.uno.deck.NullCard;
+import io.github.softwarecats.uno.deck.cards.Card;
+import io.github.softwarecats.uno.deck.cards.NullCard;
 import io.github.softwarecats.uno.game.Round;
 import org.jetbrains.annotations.NotNull;
 
@@ -25,5 +26,15 @@ public class AI extends Player {
     @Override
     public @NotNull Play play(Round round) {
         return NullCard.getInstance().getPlay(this);
+    }
+
+    @Override
+    public @NotNull Play playAfterDrawing(Round round, Card cardDrawn) {
+        return NullCard.getInstance().getPlay(this);
+    }
+
+    @Override
+    public void newRound() {
+
     }
 }

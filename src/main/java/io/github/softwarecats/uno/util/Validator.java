@@ -17,12 +17,23 @@
 package io.github.softwarecats.uno.util;
 
 import io.github.softwarecats.uno.agent.Play;
+import io.github.softwarecats.uno.deck.DiscardPile;
+import io.github.softwarecats.uno.deck.cards.Card;
 import io.github.softwarecats.uno.game.Round;
 import org.apache.commons.lang3.NotImplementedException;
 
 public class Validator {
 
-    public static boolean validatePlay(Round round, Play play) {
+    public static boolean isValidPlay(Round round, Play play) {
+        throw new NotImplementedException();
+    }
+
+    public static boolean isValidPlayAfterDrawing(Round round, Card cardDrawn, Play play) {
+        // Make sure the player is playing the card they just drew
+        throw new NotImplementedException();
+    }
+
+    public static boolean isValidCardAddition(DiscardPile discardPile, Card card) {
         throw new NotImplementedException();
     }
 

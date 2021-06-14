@@ -19,6 +19,8 @@ package io.github.softwarecats.uno.game;
 import io.github.softwarecats.uno.agent.Player;
 import io.github.softwarecats.uno.deck.Deck;
 import io.github.softwarecats.uno.deck.PackFactory;
+import io.github.softwarecats.uno.util.WinChecker;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -43,10 +45,17 @@ public class Game {
     }
 
     protected void playRound() {
-
+        Round currentRound = new Round(players);
+        currentRound.simulate();
     }
 
     public void simulate() {
+        while (WinChecker.playerWonGame(players) == null) {
+            playRound();
 
+            for (Player player : players) {
+                player.getHand().clear();
+            }
+        }
     }
 }

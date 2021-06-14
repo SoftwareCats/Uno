@@ -14,26 +14,21 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.deck;
+package io.github.softwarecats.uno.deck.cards;
 
 import io.github.softwarecats.uno.agent.Play;
+import io.github.softwarecats.uno.deck.Color;
 import io.github.softwarecats.uno.game.Round;
+import org.apache.commons.lang3.NotImplementedException;
 
-/**
- * Play nothing.
- */
-public class NullCard extends Card {
+public class DrawTwoCard extends ColoredCard {
 
-    private static final NullCard INSTANCE = new NullCard();
-
-    private NullCard() {
-    }
-
-    public static NullCard getInstance() {
-        return INSTANCE;
+    public DrawTwoCard(Color color) {
+        super(color);
     }
 
     @Override
     public void performAction(Round round, Play play) {
+        throw new NotImplementedException();
     }
 }

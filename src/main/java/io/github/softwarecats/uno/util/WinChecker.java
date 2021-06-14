@@ -16,5 +16,30 @@
 
 package io.github.softwarecats.uno.util;
 
-public class PointCalculator {
+import io.github.softwarecats.uno.agent.Player;
+import io.github.softwarecats.uno.game.Rules;
+
+import java.util.List;
+
+public class WinChecker {
+
+    public static Player playerWonGame(List<Player> players) {
+        for (Player player : players) {
+            if (player.getPoints() > Rules.WINNING_POINTS) {
+                return player;
+            }
+        }
+
+        return null;
+    }
+
+    public static Player playerWonRound(List<Player> players) {
+        for (Player player : players) {
+            if (player.getHand().size() == 0) {
+                return player;
+            }
+        }
+
+        return null;
+    }
 }

@@ -16,8 +16,21 @@
 
 package io.github.softwarecats.uno.deck;
 
+import io.github.softwarecats.uno.deck.cards.Card;
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Deck extends ArrayList<Card> {
+    public Deck(int initialCapacity) {
+        super(initialCapacity);
+    }
 
+    public Deck() {
+    }
+
+    public Deck(@NotNull Collection<? extends Card> c) {
+        super(c);
+    }
 }

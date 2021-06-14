@@ -14,7 +14,18 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.deck;
+package io.github.softwarecats.uno.util;
 
-public class WildDrawFourCard extends WildCard {
+import io.github.softwarecats.uno.agent.Player;
+
+import java.util.List;
+import java.util.Random;
+
+public class PlayerPicker {
+
+    protected static final Random RNG = new Random();
+
+    public static Player pickPlayer(List<Player> players) {
+        return players.get(RNG.nextInt(players.size()));
+    }
 }

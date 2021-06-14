@@ -28,9 +28,11 @@ public class App {
 
     public static void main(String[] args) {
         Player human = new Human();
-        Player ai = new AI();
+        Player ai1 = new AI();
+        Player ai2 = new AI();
+        Player ai3 = new AI();
 
-        Game game = new Game(human, ai);
+        Game game = new Game(human, ai1, ai2, ai3);
         game.simulate();
     }
 }

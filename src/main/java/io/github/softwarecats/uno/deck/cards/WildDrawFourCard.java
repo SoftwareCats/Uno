@@ -14,25 +14,18 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.deck;
+package io.github.softwarecats.uno.deck.cards;
 
 import io.github.softwarecats.uno.agent.Play;
-import io.github.softwarecats.uno.agent.Player;
 import io.github.softwarecats.uno.game.Round;
+import org.apache.commons.lang3.NotImplementedException;
 
-public class WildCard extends Card {
+public class WildDrawFourCard extends WildCard {
 
     @Override
     public void performAction(Round round, Play play) {
-        round.setCurrentColor(play.getNewColor());
-    }
+        super.performAction(round, play);
 
-    @Override
-    public Play getPlay(Player player) {
-        return this.getPlay(player, null);
-    }
-
-    public Play getPlay(Player player, Color colorChange) {
-        return new Play(this, player, colorChange);
+        throw new NotImplementedException();
     }
 }

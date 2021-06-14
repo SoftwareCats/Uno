@@ -14,29 +14,23 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.agent;
+package io.github.softwarecats.uno.deck.cards;
 
-import io.github.softwarecats.uno.deck.Deck;
-import io.github.softwarecats.uno.deck.cards.Card;
+import io.github.softwarecats.uno.agent.Play;
+import io.github.softwarecats.uno.deck.Color;
 import io.github.softwarecats.uno.game.Round;
-import org.jetbrains.annotations.NotNull;
 
-public abstract class Player {
+public class NumberCard extends ColoredCard {
 
-    protected int points = 0;
-    protected Deck hand = new Deck();
+    protected int number;
 
-    public abstract @NotNull Play play(Round round);
-
-    public abstract @NotNull Play playAfterDrawing(Round round, Card cardDrawn);
-
-    public abstract void newRound();
-
-    public Deck getHand() {
-        return hand;
+    public NumberCard(Color color, int number) {
+        super(color);
+        this.number = number;
     }
 
-    public int getPoints() {
-        return points;
+    @Override
+    public void performAction(Round round, Play play) {
+        // Number cards have no action
     }
 }

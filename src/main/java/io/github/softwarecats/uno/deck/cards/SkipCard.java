@@ -14,22 +14,21 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.deck;
+package io.github.softwarecats.uno.deck.cards;
 
 import io.github.softwarecats.uno.agent.Play;
+import io.github.softwarecats.uno.deck.Color;
 import io.github.softwarecats.uno.game.Round;
+import org.apache.commons.lang3.NotImplementedException;
 
-public class NumberCard extends ColoredCard {
+public class SkipCard extends ColoredCard {
 
-    protected int number;
-
-    public NumberCard(Color color, int number) {
+    public SkipCard(Color color) {
         super(color);
-        this.number = number;
     }
 
     @Override
     public void performAction(Round round, Play play) {
-        // Number cards have no action
+        throw new NotImplementedException();
     }
 }

@@ -16,6 +16,8 @@
 
 package io.github.softwarecats.uno.deck;
 
+import io.github.softwarecats.uno.deck.cards.*;
+
 public class PackFactory {
 
     public static Deck getPack() {

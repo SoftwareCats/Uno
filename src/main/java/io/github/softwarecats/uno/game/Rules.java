@@ -20,5 +20,7 @@ public class Rules {
 
     public static final int WINNING_POINTS = 500;
 
-    public static final Direction STARTING_DIRECTION = Direction.LEFT;
+    public static final Direction INITIAL_DIRECTION = Direction.LEFT;
+
+    public static final int INITIAL_CARD_COUNT = 7;
 }

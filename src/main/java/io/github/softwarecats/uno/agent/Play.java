@@ -16,9 +16,9 @@
 
 package io.github.softwarecats.uno.agent;
 
-import io.github.softwarecats.uno.deck.Card;
 import io.github.softwarecats.uno.deck.Color;
-import io.github.softwarecats.uno.deck.WildCard;
+import io.github.softwarecats.uno.deck.cards.Card;
+import io.github.softwarecats.uno.deck.cards.WildCard;
 
 public class Play {
 

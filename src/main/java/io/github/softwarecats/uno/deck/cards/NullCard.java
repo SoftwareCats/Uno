@@ -14,13 +14,27 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.deck;
+package io.github.softwarecats.uno.deck.cards;
 
-public abstract class ColoredCard extends Card {
+import io.github.softwarecats.uno.agent.Play;
+import io.github.softwarecats.uno.game.Round;
 
-    protected Color color;
+/**
+ * Play nothing.
+ */
+public class NullCard extends Card {
 
-    public ColoredCard(Color color) {
-        this.color = color;
+    private static final NullCard INSTANCE = new NullCard();
+
+    private NullCard() {
+    }
+
+    public static NullCard getInstance() {
+        return INSTANCE;
+    }
+
+    @Override
+    public void performAction(Round round, Play play) {
+        // Player must draw a card if they play null
     }
 }

@@ -14,20 +14,32 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.deck;
+package io.github.softwarecats.uno.deck.cards;
 
 import io.github.softwarecats.uno.agent.Play;
+import io.github.softwarecats.uno.agent.Player;
+import io.github.softwarecats.uno.deck.Color;
 import io.github.softwarecats.uno.game.Round;
-import org.apache.commons.lang3.NotImplementedException;
 
-public class DrawTwoCard extends ColoredCard {
+public class WildCard extends Card {
 
-    public DrawTwoCard(Color color) {
-        super(color);
+    protected Color designatedColor;
+
+    public Color getDesignatedColor() {
+        return designatedColor;
     }
 
     @Override
     public void performAction(Round round, Play play) {
-        throw new NotImplementedException();
+        designatedColor = play.getNewColor();
+    }
+
+    @Override
+    public Play getPlay(Player player) {
+        return this.getPlay(player, null);
+    }
+
+    public Play getPlay(Player player, Color colorChange) {
+        return new Play(this, player, colorChange);
     }
 }

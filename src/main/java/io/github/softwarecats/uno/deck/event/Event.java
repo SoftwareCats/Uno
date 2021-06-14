@@ -14,20 +14,10 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.deck;
+package io.github.softwarecats.uno.deck.event;
 
-import io.github.softwarecats.uno.agent.Play;
-import io.github.softwarecats.uno.game.Round;
-import org.apache.commons.lang3.NotImplementedException;
-
-public class ReverseCard extends ColoredCard {
-
-    public ReverseCard(Color color) {
-        super(color);
-    }
-
-    @Override
-    public void performAction(Round round, Play play) {
-        throw new NotImplementedException();
-    }
+public enum Event {
+    DRAW_TWO,
+    DRAW_FOUR,
+    SKIP
 }
