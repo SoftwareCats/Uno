@@ -29,6 +29,10 @@ public class NumberCard extends ColoredCard {
         this.number = number;
     }
 
+    public int getNumber() {
+        return number;
+    }
+
     @Override
     public void performAction(Round round, Play play) {
         // Number cards have no action

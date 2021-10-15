@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Add event registers">
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/PackFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uno.iml" beforeDir="false" afterPath="$PROJECT_DIR$/uno.iml" afterDir="false" />
+    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Update dependency versions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/cards/NumberCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/cards/NumberCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/PackFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/PackFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +157,7 @@
       <recent name="io.github.softwarecats.uno.agent" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PackFactoryTest.getPack">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="Oracle JDK 11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -176,6 +173,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PackFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Uno" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.softwarecats.uno.deck.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.softwarecats.uno.deck" />
+      <option name="MAIN_CLASS_NAME" value="io.github.softwarecats.uno.deck.PackFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PackFactoryTest.getPack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Uno" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.softwarecats.uno.deck.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.softwarecats.uno.deck" />
+      <option name="MAIN_CLASS_NAME" value="io.github.softwarecats.uno.deck.PackFactoryTest" />
+      <option name="METHOD_NAME" value="getPack" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.PackFactoryTest" />
+      <item itemvalue="JUnit.PackFactoryTest.getPack" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PackFactoryTest.getPack" />
+        <item itemvalue="JUnit.PackFactoryTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ScalaProjectSettings">
     <option name="intInjectionMapping">
@@ -238,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623669795837</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update dependency versions">
+      <created>1634289255257</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634289255260</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,7 +306,8 @@
     <MESSAGE value="Add license" />
     <MESSAGE value="Implement main game flow" />
     <MESSAGE value="Add event registers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add event registers" />
+    <MESSAGE value="Update dependency versions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update dependency versions" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
