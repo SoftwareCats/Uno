@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Implement main game flow">
+    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Add event registers">
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/PackFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uno.iml" beforeDir="false" afterPath="$PROJECT_DIR$/uno.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/cards/ColoredCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/cards/ColoredCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/cards/DrawTwoCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/cards/DrawTwoCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/cards/SkipCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/cards/SkipCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/cards/WildDrawFourCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/cards/WildDrawFourCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/Deck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,7 @@
       <list>
         <option value="Class" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -110,7 +112,7 @@
     </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="1t1oO4uCZqarVEug0Qbpik4Ts1m" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -123,12 +125,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="D:/ProgramData/Android/Sdk" />
+    <property name="code.cleanup.on.save" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="format.on.save" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="optimize.imports.on.save" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="rearrange.code.on.save" value="true" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -138,8 +147,14 @@
       <recent name="E:\Programming\Java\Uno\.idea" />
       <recent name="E:\Programming\Java\Uno\.github\ISSUE_TEMPLATE" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="io.github.softwarecats.uno" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="io.github.softwarecats.uno.deck" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.github.softwarecats.uno.agent" />
@@ -147,8 +162,10 @@
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="Oracle JDK 11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="io.github.softwarecats.uno.App" />
-      <module name="uno" />
+      <module name="Uno" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="io.github.softwarecats.uno.game.*" />
@@ -214,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623669527305</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add event registers">
+      <created>1623669795837</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623669795837</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +259,11 @@
     <MESSAGE value="Revise AppTest" />
     <MESSAGE value="Add license" />
     <MESSAGE value="Implement main game flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement main game flow" />
+    <MESSAGE value="Add event registers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add event registers" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

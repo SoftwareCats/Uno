@@ -16,22 +16,20 @@
 
 package io.github.softwarecats.uno.deck;
 
-import io.github.softwarecats.uno.deck.cards.Card;
-import org.jetbrains.annotations.NotNull;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Collection;
+class PackFactoryTest {
 
-public class Deck extends ArrayList<Card> {
+    public Deck pack;
 
-    public Deck(int initialCapacity) {
-        super(initialCapacity);
+    @BeforeEach
+    void setUp() {
+        pack = PackFactory.getPack();
     }
 
-    public Deck() {
-    }
+    @Test
+    void getPack() {
 
-    public Deck(@NotNull Collection<? extends Card> c) {
-        super(c);
     }
 }
