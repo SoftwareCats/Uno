@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Implement unit test for PackFactory">
+    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Fix up formatting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/agent/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/agent/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/event/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/event/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/PackFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/PackFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Round.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Round.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/util/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/util/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +138,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="rearrange.code.on.save" value="true" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.grazie" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -157,7 +161,7 @@
       <recent name="io.github.softwarecats.uno.agent" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PackFactoryTest">
+  <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="Oracle JDK 11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -173,30 +177,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PackFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Uno" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.softwarecats.uno.deck.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.softwarecats.uno.deck" />
-      <option name="MAIN_CLASS_NAME" value="io.github.softwarecats.uno.deck.PackFactoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.App" />
-      <item itemvalue="JUnit.PackFactoryTest" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.PackFactoryTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ScalaProjectSettings">
     <option name="intInjectionMapping">
@@ -273,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634290904681</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add color checks for PackFactoryTest">
+      <created>1634367559900</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1634367559900</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,10 +284,17 @@
     <MESSAGE value="Add event registers" />
     <MESSAGE value="Update dependency versions" />
     <MESSAGE value="Implement unit test for PackFactory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement unit test for PackFactory" />
+    <MESSAGE value="Add color checks for PackFactoryTest" />
+    <MESSAGE value="Fix up formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix up formatting" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Uno$App.ic" NAME="App Coverage Results" MODIFIED="1634371861699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.github.softwarecats.uno.game.*</FILTER>
+    </SUITE>
   </component>
 </project>

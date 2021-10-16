@@ -41,7 +41,7 @@ public class Game {
     }
 
     public Game(Player... players) {
-        this.players = Arrays.stream(players).collect(Collectors.toList());
+        this(Arrays.stream(players).collect(Collectors.toList()));
     }
 
     protected void playRound() {

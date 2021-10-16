@@ -24,6 +24,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class Player {
 
     protected int points = 0;
+    
     protected Deck hand = new Deck();
 
     public abstract @NotNull Play play(Round round);

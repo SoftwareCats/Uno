@@ -39,9 +39,7 @@ public class Round {
 
     protected Deck drawPile;
     protected DiscardPile discardPile;
-
     protected Direction currentDirection = Rules.INITIAL_DIRECTION;
-
     protected Player currentPlayer;
     protected List<Event> events = new ArrayList<>();
 
@@ -172,6 +170,10 @@ public class Round {
 
     public Player getCurrentPlayer() {
         return currentPlayer;
+    }
+
+    public DiscardPile getDiscardPile() {
+        return discardPile;
     }
 
     public void registerEvent(Event event) {

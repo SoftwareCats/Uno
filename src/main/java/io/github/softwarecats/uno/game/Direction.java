@@ -24,7 +24,7 @@ public enum Direction {
     LEFT(-1),
     RIGHT(1);
 
-    protected int indexShift;
+    private final int indexShift;
 
     Direction(int indexShift) {
         this.indexShift = indexShift;

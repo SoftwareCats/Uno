@@ -16,6 +16,7 @@
 
 package io.github.softwarecats.uno.deck.event;
 
+// TODO: Refactor enum into base class and children classes
 public enum Event {
     DRAW_TWO,
     DRAW_FOUR,
