@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Update dependency versions">
+    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Implement unit test for PackFactory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/cards/NumberCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/cards/NumberCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/event/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/event/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/PackFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/PackFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +134,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="rearrange.code.on.save" value="true" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -157,7 +157,7 @@
       <recent name="io.github.softwarecats.uno.agent" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PackFactoryTest.getPack">
+  <component name="RunManager" selected="JUnit.PackFactoryTest">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="Oracle JDK 11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -188,30 +188,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PackFactoryTest.getPack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Uno" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.softwarecats.uno.deck.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.softwarecats.uno.deck" />
-      <option name="MAIN_CLASS_NAME" value="io.github.softwarecats.uno.deck.PackFactoryTest" />
-      <option name="METHOD_NAME" value="getPack" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.App" />
       <item itemvalue="JUnit.PackFactoryTest" />
-      <item itemvalue="JUnit.PackFactoryTest.getPack" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PackFactoryTest.getPack" />
         <item itemvalue="JUnit.PackFactoryTest" />
       </list>
     </recent_temporary>
@@ -284,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634289255260</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implement unit test for PackFactory">
+      <created>1634290904681</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634290904681</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,7 +296,8 @@
     <MESSAGE value="Implement main game flow" />
     <MESSAGE value="Add event registers" />
     <MESSAGE value="Update dependency versions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update dependency versions" />
+    <MESSAGE value="Implement unit test for PackFactory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement unit test for PackFactory" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

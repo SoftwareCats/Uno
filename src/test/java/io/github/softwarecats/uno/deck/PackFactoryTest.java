@@ -19,6 +19,8 @@ package io.github.softwarecats.uno.deck;
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 import io.github.softwarecats.uno.deck.cards.*;
+import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.apache.commons.lang3.tuple.Pair;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -35,30 +37,44 @@ class PackFactoryTest {
     @Test
     void getPack() {
         // Number Cards
-        Multiset<Integer> numberCounts = HashMultiset.create();
+        Multiset<Pair<Color, Integer>> numberCardCounts = HashMultiset.create();
 
         for (Card card : pack) {
             if (card instanceof NumberCard) {
-                numberCounts.add(((NumberCard) card).getNumber());
+                NumberCard numberCard = (NumberCard) card;
+                numberCardCounts.add(new ImmutablePair<>(numberCard.getColor(), numberCard.getNumber()));
             }
         }
 
-        for (int i = 1; i <= 9; i++) {
-            Assertions.assertEquals(8, numberCounts.count(i));
+        for (Color color : Color.values()) {
+            for (int i = 1; i <= 9; i++) {
+                Assertions.assertEquals(2, numberCardCounts.count(new ImmutablePair<>(color, i)));
+            }
+            Assertions.assertEquals(1, numberCardCounts.count(new ImmutablePair<>(color, 0)));
         }
-        Assertions.assertEquals(4, numberCounts.count(0));
 
         // Action Cards
-        Multiset<Class<? extends Card>> actionCardCounts = HashMultiset.create();
+        Multiset<Pair<String, Color>> actionCardCounts = HashMultiset.create();
 
         for (Card card : pack) {
-            actionCardCounts.add(card.getClass());
+            if (card instanceof ColoredCard) {
+                actionCardCounts.add(new ImmutablePair<>(
+                        card.getClass().getName(),
+                        ((ColoredCard) card).getColor()));
+            } else {
+                actionCardCounts.add(new ImmutablePair<>(
+                        card.getClass().getName(),
+                        null));
+            }
         }
 
-        Assertions.assertEquals(8, actionCardCounts.count(SkipCard.class));
-        Assertions.assertEquals(8, actionCardCounts.count(ReverseCard.class));
-        Assertions.assertEquals(8, actionCardCounts.count(DrawTwoCard.class));
-        Assertions.assertEquals(4, actionCardCounts.count(WildCard.class));
-        Assertions.assertEquals(4, actionCardCounts.count(WildDrawFourCard.class));
+        for (Color color : Color.values()) {
+            Assertions.assertEquals(2, actionCardCounts.count(new ImmutablePair<>(SkipCard.class.getName(), color)));
+            Assertions.assertEquals(2, actionCardCounts.count(new ImmutablePair<>(ReverseCard.class.getName(), color)));
+            Assertions.assertEquals(2, actionCardCounts.count(new ImmutablePair<>(DrawTwoCard.class.getName(), color)));
+        }
+
+        Assertions.assertEquals(4, actionCardCounts.count(new ImmutablePair<String, Color>(WildCard.class.getName(), null)));
+        Assertions.assertEquals(4, actionCardCounts.count(new ImmutablePair<String, Color>(WildDrawFourCard.class.getName(), null)));
     }
 }
