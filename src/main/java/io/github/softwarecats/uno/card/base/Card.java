@@ -14,25 +14,11 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.card;
+package io.github.softwarecats.uno.card.base;
 
-import io.github.softwarecats.uno.card.base.ActionCard;
-import io.github.softwarecats.uno.card.base.Card;
-import io.github.softwarecats.uno.card.base.Color;
-import org.apache.commons.lang3.NotImplementedException;
+public abstract class Card implements Colorable, FaceValuable {
 
-public class ReverseCard extends ActionCard {
+    public abstract boolean canPlaceOn(Card card);
 
-    public ReverseCard(Color color) {
-        super(color);
-    }
-
-    @Override
-    public boolean canPlaceOn(Card card) {
-        throw new NotImplementedException();
-    }
-
-    @Override
-    public void performAction() {
-    }
+    public abstract void performAction();
 }

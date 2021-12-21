@@ -14,25 +14,25 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.card;
+package io.github.softwarecats.uno.card.base;
 
-import io.github.softwarecats.uno.card.base.ActionCard;
-import io.github.softwarecats.uno.card.base.Card;
-import io.github.softwarecats.uno.card.base.Color;
-import org.apache.commons.lang3.NotImplementedException;
+import io.github.softwarecats.uno.card.WildCard;
 
-public class ReverseCard extends ActionCard {
+import java.util.Optional;
 
-    public ReverseCard(Color color) {
-        super(color);
+/**
+ * Non-{@link WildCard} with a predetermined {@link Color} and FaceValue
+ */
+public abstract class ConcreteCard extends Card {
+
+    protected final Color color;
+
+    protected ConcreteCard(Color color) {
+        this.color = color;
     }
 
     @Override
-    public boolean canPlaceOn(Card card) {
-        throw new NotImplementedException();
-    }
-
-    @Override
-    public void performAction() {
+    public Optional<Color> getColor() {
+        return Optional.ofNullable(color);
     }
 }

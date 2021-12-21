@@ -4,17 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Remove unnecessary classes in preparation for card validation redesign">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/DrawTwoCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/NumberCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/ReverseCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/SkipCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/WildCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/WildDrawFourCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/package-info.java" afterDir="false" />
+    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Create stub classes for the cards">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/ActionCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/Colorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/ConcreteCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/FaceValuable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/DrawTwoCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/DrawTwoCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/NumberCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/NumberCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/ReverseCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/ReverseCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/SkipCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/SkipCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/WildCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/WildCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +31,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="JUnit5 Test Class" />
         <option value="module-info" />
-        <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -75,7 +79,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="gameloop" />
+        <entry key="$PROJECT_DIR$" value="card" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,16 +111,24 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="cardvalidation" />
+                    <option name="lastUsedInstant" value="1640082208" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="card" />
-                    <option name="lastUsedInstant" value="1640078166" />
+                    <option name="lastUsedInstant" value="1640082066" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="player" />
+                    <option name="lastUsedInstant" value="1640082062" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1640082054" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="gameloop" />
                     <option name="lastUsedInstant" value="1640078147" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1622114489" />
                   </RecentBranch>
                 </list>
               </option>
@@ -316,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640077273675</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Create stub classes for the cards">
+      <created>1640082140535</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1640082140535</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -344,7 +363,8 @@
     <MESSAGE value="Implement Play validations" />
     <MESSAGE value="Update copyright" />
     <MESSAGE value="Remove unnecessary classes in preparation for card validation redesign" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove unnecessary classes in preparation for card validation redesign" />
+    <MESSAGE value="Create stub classes for the cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create stub classes for the cards" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

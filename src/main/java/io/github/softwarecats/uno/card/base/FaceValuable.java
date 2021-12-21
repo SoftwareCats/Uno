@@ -14,11 +14,12 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.card;
+package io.github.softwarecats.uno.card.base;
 
-public abstract class Card {
+import java.util.Optional;
 
-    public abstract boolean canPlaceOn(Card card);
+public interface FaceValuable {
 
-    public abstract void performAction();
+    Optional<String> getFaceValue();
+
 }

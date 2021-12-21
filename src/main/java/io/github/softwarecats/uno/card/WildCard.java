@@ -16,8 +16,17 @@
 
 package io.github.softwarecats.uno.card;
 
+import io.github.softwarecats.uno.card.base.Card;
+import io.github.softwarecats.uno.card.base.Color;
+import lombok.Setter;
+
+import java.util.Optional;
+
 // TODO: Clear wildcard color as it goes into the draw pile.
 public class WildCard extends Card {
+
+    @Setter
+    protected Color currentColor;
 
     @Override
     public boolean canPlaceOn(Card card) {
@@ -26,5 +35,15 @@ public class WildCard extends Card {
 
     @Override
     public void performAction() {
+    }
+
+    @Override
+    public Optional<Color> getColor() {
+        return Optional.ofNullable(currentColor);
+    }
+
+    @Override
+    public Optional<String> getFaceValue() {
+        return Optional.empty();
     }
 }

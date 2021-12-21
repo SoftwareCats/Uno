@@ -16,9 +16,16 @@
 
 package io.github.softwarecats.uno.card;
 
+import io.github.softwarecats.uno.card.base.ActionCard;
+import io.github.softwarecats.uno.card.base.Card;
+import io.github.softwarecats.uno.card.base.Color;
 import org.apache.commons.lang3.NotImplementedException;
 
-public class DrawTwoCard extends Card {
+public class DrawTwoCard extends ActionCard {
+
+    public DrawTwoCard(Color color) {
+        super(color);
+    }
 
     @Override
     public boolean canPlaceOn(Card card) {
