@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.player;
+package io.github.softwarecats.uno.player.controller;
 
-public abstract class Player {
+public class PlayerController extends Controller {
 
 }
