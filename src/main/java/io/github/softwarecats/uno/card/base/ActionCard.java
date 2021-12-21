@@ -30,11 +30,6 @@ public abstract class ActionCard extends ConcreteCard {
     }
 
     @Override
-    public void performAction() {
-
-    }
-
-    @Override
     public Optional<String> getFaceValue() {
         return Optional.of(getClass().getSimpleName());
     }

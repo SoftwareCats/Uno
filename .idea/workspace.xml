@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Create stub classes for the cards">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/ActionCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/Colorable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/ConcreteCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/FaceValuable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/package-info.java" afterDir="false" />
+    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Implement color and value interfaces to aid card placement validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/DrawTwoCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/DrawTwoCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/NumberCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/NumberCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/ReverseCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/ReverseCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/SkipCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/SkipCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/WildCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/WildCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/ActionCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/base/ActionCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640082140535</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Implement color and value interfaces to aid card placement validation">
+      <created>1640083606386</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1640083606386</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,7 +362,8 @@
     <MESSAGE value="Update copyright" />
     <MESSAGE value="Remove unnecessary classes in preparation for card validation redesign" />
     <MESSAGE value="Create stub classes for the cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create stub classes for the cards" />
+    <MESSAGE value="Implement color and value interfaces to aid card placement validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement color and value interfaces to aid card placement validation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
