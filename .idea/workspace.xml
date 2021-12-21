@@ -68,7 +68,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="player" />
+        <entry key="$PROJECT_DIR$" value="card" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,20 +100,24 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="gameloop" />
-                    <option name="lastUsedInstant" value="1640085924" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="player" />
-                    <option name="lastUsedInstant" value="1640085777" />
+                    <option name="branchName" value="cardvalidation" />
+                    <option name="lastUsedInstant" value="1640082208" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="card" />
                     <option name="lastUsedInstant" value="1640082066" />
                   </RecentBranch>
                   <RecentBranch>
+                    <option name="branchName" value="player" />
+                    <option name="lastUsedInstant" value="1640082062" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1640082054" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="gameloop" />
+                    <option name="lastUsedInstant" value="1640078147" />
                   </RecentBranch>
                 </list>
               </option>
