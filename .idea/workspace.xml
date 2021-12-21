@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Update copyright">
-      <change afterPath="$PROJECT_DIR$/.idea/Uno.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Remove unnecessary classes in preparation for card validation redesign">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/DrawTwoCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/NumberCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/ReverseCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/SkipCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/WildCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/WildDrawFourCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/card/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +27,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="module-info" />
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,7 +73,21 @@
         </map>
       </branch-storage>
     </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="gameloop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Bump junit-jupiter-engine from 5.8.1 to 5.8.2&#10;&#10;Bumps [junit-jupiter-engine](https://github.com/junit-team/junit5) from 5.8.1 to 5.8.2.&#10;- [Release notes](https://github.com/junit-team/junit5/releases)&#10;- [Commits](https://github.com/junit-team/junit5/compare/r5.8.1...r5.8.2)&#10;&#10;---&#10;updated-dependencies:&#10;- dependency-name: org.junit.jupiter:junit-jupiter-engine&#10;  dependency-type: direct:development&#10;  update-type: version-update:semver-patch&#10;...&#10;&#10;Signed-off-by: dependabot[bot] &lt;support@github.com&gt;" />
+        <option name="rewordedMessage" value="Bump dependencies" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="onto" value="a5d7345242efae7fc37df2594e469fb1ed238a4a" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -73,7 +98,7 @@
     </file-type-list>
   </component>
   <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="2" />
+    <option name="projectConfigVersion" value="4" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -82,12 +107,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1622114489" />
+                    <option name="branchName" value="card" />
+                    <option name="lastUsedInstant" value="1640078166" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1622114488" />
+                    <option name="branchName" value="gameloop" />
+                    <option name="lastUsedInstant" value="1640078147" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1622114489" />
                   </RecentBranch>
                 </list>
               </option>
@@ -139,8 +168,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="rearrange.code.on.save" value="true" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="editor.reader.mode" />
     <property name="update.copyright.on.save" value="true" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="increaseLineSpacing" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -160,6 +192,7 @@
       <recent name="io.github.softwarecats.uno.deck" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.softwarecats.uno.card" />
       <recent name="io.github.softwarecats.uno.agent" />
     </key>
   </component>
@@ -276,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640076821478</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Remove unnecessary classes in preparation for card validation redesign">
+      <created>1640077273674</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640077273675</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,7 +343,8 @@
     <MESSAGE value="Fix up formatting" />
     <MESSAGE value="Implement Play validations" />
     <MESSAGE value="Update copyright" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update copyright" />
+    <MESSAGE value="Remove unnecessary classes in preparation for card validation redesign" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unnecessary classes in preparation for card validation redesign" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
