@@ -14,16 +14,8 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.player.controller;
+package io.github.softwarecats.uno.player;
 
-import io.github.softwarecats.uno.player.PlayerActor;
-
-/**
- * The abstract controller controlling the physical {@link io.github.softwarecats.uno.player.PlayerActor}
- */
-// TODO: It is the responsibility of the controller to recolor WildCards when they are played.
-public abstract class Controller {
-
-    protected PlayerActor playerActor;
+public abstract class Player {
 
 }

@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Create stub Player class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/PlayerActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/controller/AIController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/controller/PlayerController.java" afterDir="false" />
+    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Update copyright">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/controller/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="card" />
+        <entry key="$PROJECT_DIR$" value="player" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,24 +100,20 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="cardvalidation" />
-                    <option name="lastUsedInstant" value="1640082208" />
+                    <option name="branchName" value="gameloop" />
+                    <option name="lastUsedInstant" value="1640085924" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="player" />
+                    <option name="lastUsedInstant" value="1640085777" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="card" />
                     <option name="lastUsedInstant" value="1640082066" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="player" />
-                    <option name="lastUsedInstant" value="1640082062" />
-                  </RecentBranch>
-                  <RecentBranch>
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1640082054" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="gameloop" />
-                    <option name="lastUsedInstant" value="1640078147" />
                   </RecentBranch>
                 </list>
               </option>
