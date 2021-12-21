@@ -16,13 +16,13 @@
 
 package io.github.softwarecats.uno.card;
 
-import org.apache.commons.lang3.NotImplementedException;
+import io.github.softwarecats.uno.card.base.ActionCard;
+import io.github.softwarecats.uno.card.base.Color;
 
-public class SkipCard extends Card {
+public class SkipCard extends ActionCard {
 
-    @Override
-    public boolean canPlaceOn(Card card) {
-        throw new NotImplementedException();
+    public SkipCard(Color color) {
+        super(color);
     }
 
     @Override

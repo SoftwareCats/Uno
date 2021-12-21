@@ -14,18 +14,11 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.card;
+package io.github.softwarecats.uno.card.base;
 
-import io.github.softwarecats.uno.card.base.ActionCard;
-import io.github.softwarecats.uno.card.base.Color;
+public abstract class Card implements Colorable, FaceValuable {
 
-public class DrawTwoCard extends ActionCard {
+    public abstract boolean canPlaceOn(Card card);
 
-    public DrawTwoCard(Color color) {
-        super(color);
-    }
-
-    @Override
-    public void performAction() {
-    }
+    public abstract void performAction();
 }

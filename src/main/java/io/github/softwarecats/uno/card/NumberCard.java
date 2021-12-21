@@ -16,11 +16,21 @@
 
 package io.github.softwarecats.uno.card;
 
+import io.github.softwarecats.uno.card.base.Card;
+import io.github.softwarecats.uno.card.base.Color;
+import io.github.softwarecats.uno.card.base.ConcreteCard;
 import org.apache.commons.lang3.NotImplementedException;
 
-public class NumberCard extends Card {
+import java.util.Optional;
 
-    protected int number;
+public class NumberCard extends ConcreteCard {
+
+    protected final int number;
+
+    public NumberCard(Color color, int number) {
+        super(color);
+        this.number = number;
+    }
 
     @Override
     public boolean canPlaceOn(Card card) {
@@ -29,5 +39,10 @@ public class NumberCard extends Card {
 
     @Override
     public void performAction() {
+    }
+
+    @Override
+    public Optional<String> getFaceValue() {
+        return Optional.of(String.valueOf(number));
     }
 }

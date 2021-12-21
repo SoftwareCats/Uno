@@ -14,18 +14,12 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.card;
+package io.github.softwarecats.uno.card.base;
 
-import io.github.softwarecats.uno.card.base.ActionCard;
-import io.github.softwarecats.uno.card.base.Color;
+import java.util.Optional;
 
-public class DrawTwoCard extends ActionCard {
+public interface Colorable {
 
-    public DrawTwoCard(Color color) {
-        super(color);
-    }
+    Optional<Color> getColor();
 
-    @Override
-    public void performAction() {
-    }
 }

@@ -14,18 +14,25 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.card;
+package io.github.softwarecats.uno.card.base;
 
-import io.github.softwarecats.uno.card.base.ActionCard;
-import io.github.softwarecats.uno.card.base.Color;
+import io.github.softwarecats.uno.card.WildCard;
 
-public class DrawTwoCard extends ActionCard {
+import java.util.Optional;
 
-    public DrawTwoCard(Color color) {
-        super(color);
+/**
+ * Non-{@link WildCard} with a predetermined {@link Color} and FaceValue
+ */
+public abstract class ConcreteCard extends Card {
+
+    protected final Color color;
+
+    protected ConcreteCard(Color color) {
+        this.color = color;
     }
 
     @Override
-    public void performAction() {
+    public Optional<Color> getColor() {
+        return Optional.ofNullable(color);
     }
 }

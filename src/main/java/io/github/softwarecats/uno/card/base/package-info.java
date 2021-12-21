@@ -14,18 +14,4 @@
  * limitations under the License.
  */
 
-package io.github.softwarecats.uno.card;
-
-import io.github.softwarecats.uno.card.base.ActionCard;
-import io.github.softwarecats.uno.card.base.Color;
-
-public class DrawTwoCard extends ActionCard {
-
-    public DrawTwoCard(Color color) {
-        super(color);
-    }
-
-    @Override
-    public void performAction() {
-    }
-}
+package io.github.softwarecats.uno.card.base;
