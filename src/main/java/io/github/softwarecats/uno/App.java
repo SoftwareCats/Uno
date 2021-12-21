@@ -16,23 +16,12 @@
 
 package io.github.softwarecats.uno;
 
-import io.github.softwarecats.uno.agent.AI;
-import io.github.softwarecats.uno.agent.Human;
-import io.github.softwarecats.uno.agent.Player;
-import io.github.softwarecats.uno.game.Game;
-
 /**
  * Hello world!
  */
 public class App {
 
     public static void main(String[] args) {
-        Player human = new Human();
-        Player ai1 = new AI();
-        Player ai2 = new AI();
-        Player ai3 = new AI();
 
-        Game game = new Game(human, ai1, ai2, ai3);
-        game.simulate();
     }
 }
