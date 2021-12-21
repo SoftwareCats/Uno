@@ -19,7 +19,9 @@ package io.github.softwarecats.uno.player;
 import java.beans.PropertyChangeListener;
 
 /**
- * The physical embodiment of an actor participating in a {@link io.github.softwarecats.uno.game.Game}
+ * The physical embodiment of an actor participating in a {@link io.github.softwarecats.uno.game.Game}.
+ * <p>
+ * Player data only exists across a single {@link io.github.softwarecats.uno.game.Round}.
  */
 // TODO: Implement PropertyChangeSupport on the game
 public abstract class PlayerActor implements PropertyChangeListener {

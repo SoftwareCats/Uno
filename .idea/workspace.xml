@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Create stub Player class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/PlayerActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/PlayerActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/controller/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,12 +101,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="cardvalidation" />
-                    <option name="lastUsedInstant" value="1640082208" />
+                    <option name="branchName" value="gameloop" />
+                    <option name="lastUsedInstant" value="1640086232" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="card" />
-                    <option name="lastUsedInstant" value="1640082066" />
+                    <option name="lastUsedInstant" value="1640086125" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="player" />
@@ -111,10 +115,6 @@
                   <RecentBranch>
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1640082054" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="gameloop" />
-                    <option name="lastUsedInstant" value="1640078147" />
                   </RecentBranch>
                 </list>
               </option>
