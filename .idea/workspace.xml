@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Fix up formatting">
+    <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Implement Play validations">
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/Apache_License_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/Apache_License_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/agent/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/agent/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/event/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/deck/event/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Round.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/game/Round.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/util/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/util/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SECURITY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SECURITY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/PackFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/softwarecats/uno/deck/PackFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,9 @@
         <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <excluded-from-favorite>
@@ -100,17 +105,21 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://D:/Program Files/Java/jdk-11.0.8/lib/src.zip!/java.base/java/util/List.java" root0="SKIP_INSPECTION" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\ProgramData\Maven\repository" />
         <option name="mavenHome" value="D:/Program Files/Maven" />
+        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\Program Files\Maven\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -130,15 +139,14 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="format.on.save" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="optimize.imports.on.save" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="rearrange.code.on.save" value="true" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.grazie" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="update.copyright.on.save" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -163,7 +171,7 @@
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="Oracle JDK 11" />
+      <option name="ALTERNATIVE_JRE_PATH" value="Oracle JDK 17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="io.github.softwarecats.uno.App" />
       <module name="Uno" />
@@ -260,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634367559900</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Implement Play validations">
+      <created>1634372066487</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1634372066487</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,7 +288,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Move files" />
@@ -286,7 +300,8 @@
     <MESSAGE value="Implement unit test for PackFactory" />
     <MESSAGE value="Add color checks for PackFactoryTest" />
     <MESSAGE value="Fix up formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix up formatting" />
+    <MESSAGE value="Implement Play validations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement Play validations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
