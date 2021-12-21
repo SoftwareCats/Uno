@@ -16,6 +16,25 @@
 
 package io.github.softwarecats.uno.game;
 
+import io.github.softwarecats.uno.player.controller.Controller;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 public class Game {
 
+    protected List<Controller> controllers;
+
+    public Game(Collection<Controller> controllers) {
+        this.controllers = new ArrayList<>(controllers);
+    }
+
+    public Game(Controller... controllers) {
+        this(List.of(controllers));
+    }
+
+    public void simulate() {
+
+    }
 }
