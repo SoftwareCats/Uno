@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c78eed1a-6d7c-4a21-9650-074492706465" name="Default Changelist" comment="Create stub Player class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/PlayerActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/controller/AIController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/controller/PlayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/softwarecats/uno/player/controller/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
