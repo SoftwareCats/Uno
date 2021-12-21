@@ -1,4 +1,4 @@
 # Uno
-Uno game simulation
+Uno card game simulation
 
 Work in progress.
