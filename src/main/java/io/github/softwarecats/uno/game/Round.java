@@ -19,18 +19,29 @@ package io.github.softwarecats.uno.game;
 import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.player.PlayerActor;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Deque;
 import java.util.List;
-import java.util.Queue;
 
 public class Round {
 
     protected List<PlayerActor> players;
 
-    protected Queue<Card> drawPile;
+    protected Deque<Card> drawPile;
 
-    protected Queue<Card> discardPile;
+    protected Deque<Card> discardPile;
+
+    public Round(Collection<PlayerActor> players) {
+        // Initialize players.
+        this.players = new ArrayList<>(players);
+    }
+
+    public Round(PlayerActor... players) {
+        this(List.of(players));
+    }
 
     public void simulate() {
-        
+
     }
 }
