@@ -42,6 +42,11 @@ public class NumberCard extends ConcreteCard {
     }
 
     @Override
+    public int pointValue() {
+        return number;
+    }
+
+    @Override
     public Optional<String> getFaceValue() {
         return Optional.of(String.valueOf(number));
     }
