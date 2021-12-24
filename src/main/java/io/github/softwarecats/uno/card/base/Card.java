@@ -21,4 +21,6 @@ public abstract class Card implements Colorable, FaceValuable {
     public abstract boolean canPlaceOn(Card card);
 
     public abstract void performAction();
+
+    public abstract int pointValue();
 }
