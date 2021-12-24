@@ -19,7 +19,9 @@ package io.github.softwarecats.uno.player.controller;
 import io.github.softwarecats.uno.player.PlayerActor;
 
 /**
- * The abstract controller controlling the physical {@link io.github.softwarecats.uno.player.PlayerActor}
+ * The abstract controller controlling the physical {@link io.github.softwarecats.uno.player.PlayerActor}.
+ * <p>
+ * Controller data exists across the {@link io.github.softwarecats.uno.game.Game} session.
  */
 // TODO: It is the responsibility of the controller to recolor WildCards when they are played.
 public abstract class Controller {

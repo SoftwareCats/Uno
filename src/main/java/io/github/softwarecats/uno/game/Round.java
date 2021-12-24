@@ -16,6 +16,21 @@
 
 package io.github.softwarecats.uno.game;
 
+import io.github.softwarecats.uno.card.base.Card;
+import io.github.softwarecats.uno.player.Player;
+
+import java.util.List;
+import java.util.Queue;
+
 public class Round {
 
+    protected List<Player> players;
+
+    protected Queue<Card> drawPile;
+
+    protected Queue<Card> discardPile;
+
+    public void simulate() {
+        
+    }
 }
