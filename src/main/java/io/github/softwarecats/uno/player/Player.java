@@ -16,6 +16,11 @@
 
 package io.github.softwarecats.uno.player;
 
+import io.github.softwarecats.uno.player.controller.Controller;
+
+@Deprecated
 public abstract class Player {
+
+    Controller controller;
 
 }

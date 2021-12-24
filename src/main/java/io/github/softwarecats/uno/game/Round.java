@@ -17,14 +17,14 @@
 package io.github.softwarecats.uno.game;
 
 import io.github.softwarecats.uno.card.base.Card;
-import io.github.softwarecats.uno.player.Player;
+import io.github.softwarecats.uno.player.PlayerActor;
 
 import java.util.List;
 import java.util.Queue;
 
 public class Round {
 
-    protected List<Player> players;
+    protected List<PlayerActor> players;
 
     protected Queue<Card> drawPile;
 

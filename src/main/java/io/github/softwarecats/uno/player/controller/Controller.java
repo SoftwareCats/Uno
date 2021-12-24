@@ -26,6 +26,11 @@ import io.github.softwarecats.uno.player.PlayerActor;
 // TODO: It is the responsibility of the controller to recolor WildCards when they are played.
 public abstract class Controller {
 
-    protected PlayerActor playerActor;
+    public void onPossess(PlayerActor playerActor) {
 
+    }
+
+    public void onDetach(PlayerActor playerActor) {
+
+    }
 }
