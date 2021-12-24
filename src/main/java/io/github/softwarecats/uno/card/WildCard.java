@@ -38,6 +38,11 @@ public class WildCard extends Card {
     }
 
     @Override
+    public int pointValue() {
+        return 50;
+    }
+
+    @Override
     public Optional<Color> getColor() {
         return Optional.ofNullable(currentColor);
     }
