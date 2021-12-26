@@ -18,10 +18,14 @@ package io.github.softwarecats.uno.card;
 
 import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.card.base.Color;
+import lombok.NonNull;
 import lombok.Setter;
 
 import java.util.Optional;
 
+/**
+ * Non-{@link io.github.softwarecats.uno.card.base.ConcreteCard} with a variable {@link Color}.
+ */
 // TODO: Clear wildcard color as it goes into the draw pile.
 public class WildCard extends Card {
 
@@ -29,7 +33,7 @@ public class WildCard extends Card {
     protected Color currentColor;
 
     @Override
-    public boolean canPlaceOn(Card card) {
+    public boolean canPlaceOn(@NonNull Card other) {
         return true;
     }
 
@@ -49,6 +53,6 @@ public class WildCard extends Card {
 
     @Override
     public Optional<String> getFaceValue() {
-        return Optional.empty();
+        return Optional.of(getClass().getSimpleName());
     }
 }
