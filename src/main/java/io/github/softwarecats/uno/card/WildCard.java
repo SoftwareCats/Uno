@@ -39,6 +39,9 @@ public class WildCard extends Card {
         return true;
     }
 
+    public WildCard() {
+    }
+
     @Override
     public Action getAction() {
         // WildCard has no action.
