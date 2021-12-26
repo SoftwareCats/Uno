@@ -20,6 +20,7 @@ import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.player.PlayerActor;
 import io.github.softwarecats.uno.player.controller.Controller;
 import io.github.softwarecats.uno.util.DeckBuilder;
+import lombok.Getter;
 
 import java.util.*;
 
@@ -30,6 +31,10 @@ public class Round {
     protected Deque<Card> drawPile;
 
     protected Deque<Card> discardPile;
+
+    protected int currentPlayerIndex;
+
+    protected PlayDirection currentPlayDirection;
 
     public Round(Collection<Controller> controllers) {
         // Create players and deal 7 cards to them.
