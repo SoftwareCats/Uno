@@ -16,6 +16,8 @@
 
 package io.github.softwarecats.uno.card;
 
+import io.github.softwarecats.uno.card.action.Action;
+import io.github.softwarecats.uno.card.action.EmptyAction;
 import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.card.base.Color;
 import lombok.NonNull;
@@ -38,7 +40,9 @@ public class WildCard extends Card {
     }
 
     @Override
-    public void performAction() {
+    public Action getAction() {
+        // WildCard has no action.
+        return EmptyAction.getInstance();
     }
 
     @Override

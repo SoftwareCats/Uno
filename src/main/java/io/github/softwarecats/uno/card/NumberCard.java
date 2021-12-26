@@ -16,6 +16,8 @@
 
 package io.github.softwarecats.uno.card;
 
+import io.github.softwarecats.uno.card.action.Action;
+import io.github.softwarecats.uno.card.action.EmptyAction;
 import io.github.softwarecats.uno.card.base.Color;
 import io.github.softwarecats.uno.card.base.ConcreteCard;
 import io.github.softwarecats.uno.card.base.FaceNumerable;
@@ -32,8 +34,9 @@ public class NumberCard extends ConcreteCard implements FaceNumerable {
     }
 
     @Override
-    public void performAction() {
+    public Action getAction() {
         // Number card has no action.
+        return EmptyAction.getInstance();
     }
 
     @Override

@@ -16,10 +16,13 @@
 
 package io.github.softwarecats.uno.card;
 
+import io.github.softwarecats.uno.card.action.Action;
+import org.apache.commons.lang3.NotImplementedException;
+
 public class WildDrawFourCard extends WildCard {
 
     @Override
-    public void performAction() {
-        
+    public Action getAction() {
+        throw new NotImplementedException();
     }
 }

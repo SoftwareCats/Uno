@@ -16,8 +16,10 @@
 
 package io.github.softwarecats.uno.card;
 
+import io.github.softwarecats.uno.card.action.Action;
 import io.github.softwarecats.uno.card.base.ActionCard;
 import io.github.softwarecats.uno.card.base.Color;
+import org.apache.commons.lang3.NotImplementedException;
 
 public class SkipCard extends ActionCard {
 
@@ -26,6 +28,7 @@ public class SkipCard extends ActionCard {
     }
 
     @Override
-    public void performAction() {
+    public Action getAction() {
+        throw new NotImplementedException();
     }
 }
