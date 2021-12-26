@@ -18,27 +18,37 @@ package io.github.softwarecats.uno.game;
 
 import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.player.PlayerActor;
+import io.github.softwarecats.uno.player.controller.Controller;
+import io.github.softwarecats.uno.util.DeckBuilder;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Deque;
-import java.util.List;
+import java.util.*;
 
 public class Round {
 
-    protected List<PlayerActor> players;
+    protected final List<PlayerActor> players = new ArrayList<>();
 
     protected Deque<Card> drawPile;
 
     protected Deque<Card> discardPile;
 
-    public Round(Collection<PlayerActor> players) {
-        // Initialize players.
-        this.players = new ArrayList<>(players);
+    public Round(Collection<Controller> controllers) {
+        // Create players and deal 7 cards to them.
+        List<Card> deck = DeckBuilder.getDeck();
+        Collections.shuffle(deck);
+        {
+            int i = 0;
+            for (Controller controller : controllers) {
+                List<Card> currentHand = deck.subList(7 * i, 7 * (i + 1));
+                deck.removeAll(currentHand);
+                PlayerActor currentPlayer = new PlayerActor(controller, currentHand);
+                players.add(currentPlayer);
+                i++;
+            }
+        }
     }
 
-    public Round(PlayerActor... players) {
-        this(List.of(players));
+    public Round(Controller... controllers) {
+        this(List.of(controllers));
     }
 
     public void simulate() {

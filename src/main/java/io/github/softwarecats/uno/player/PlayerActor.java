@@ -18,6 +18,8 @@ package io.github.softwarecats.uno.player;
 
 import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.player.controller.Controller;
+import lombok.Getter;
+import lombok.Setter;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.beans.PropertyChangeEvent;
@@ -36,7 +38,8 @@ public class PlayerActor implements PropertyChangeListener {
 
     protected Controller controller;
 
-    protected List<Card> hand;
+    @Getter
+    protected final List<Card> hand;
 
     public PlayerActor(Controller controller, Collection<Card> hand) {
         this.controller = controller;
@@ -62,7 +65,7 @@ public class PlayerActor implements PropertyChangeListener {
 
     /**
      * Called when it is the player's turn to play a card.
-     *
+     * <p>
      * If the player wishes to renege they should return an empty {@link Play} instead of null.
      *
      * @return the card to play
