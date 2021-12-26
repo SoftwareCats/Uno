@@ -16,6 +16,20 @@
 
 package io.github.softwarecats.uno.player.controller;
 
+import io.github.softwarecats.uno.card.base.Card;
+import io.github.softwarecats.uno.player.Play;
+import io.github.softwarecats.uno.player.PlayerActor;
+import org.apache.commons.lang3.tuple.Pair;
+
 public class PlayerController extends Controller {
 
+    @Override
+    public Play onPlay(PlayerActor player) {
+        return null;
+    }
+
+    @Override
+    public Play onRenegingPlay(PlayerActor player, Pair<Card, Card> cardsDrawn) {
+        return null;
+    }
 }
