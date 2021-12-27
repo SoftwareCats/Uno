@@ -43,7 +43,7 @@ public class WildCard extends Card {
     }
 
     @Override
-    public Action getAction() {
+    public @NonNull Action getAction() {
         // WildCard has no action.
         return EmptyAction.getInstance();
     }

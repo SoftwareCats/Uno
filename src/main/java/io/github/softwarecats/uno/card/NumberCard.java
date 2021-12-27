@@ -21,6 +21,7 @@ import io.github.softwarecats.uno.card.action.EmptyAction;
 import io.github.softwarecats.uno.card.base.Color;
 import io.github.softwarecats.uno.card.base.ConcreteCard;
 import io.github.softwarecats.uno.card.base.FaceNumerable;
+import lombok.NonNull;
 
 import java.util.Optional;
 
@@ -34,7 +35,7 @@ public class NumberCard extends ConcreteCard implements FaceNumerable {
     }
 
     @Override
-    public Action getAction() {
+    public @NonNull Action getAction() {
         // Number card has no action.
         return EmptyAction.getInstance();
     }

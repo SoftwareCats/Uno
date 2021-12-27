@@ -17,12 +17,13 @@
 package io.github.softwarecats.uno.card;
 
 import io.github.softwarecats.uno.card.action.Action;
+import lombok.NonNull;
 import org.apache.commons.lang3.NotImplementedException;
 
 public class WildDrawFourCard extends WildCard {
 
     @Override
-    public Action getAction() {
+    public @NonNull Action getAction() {
         throw new NotImplementedException();
     }
 }
