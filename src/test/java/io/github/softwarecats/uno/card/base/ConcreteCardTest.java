@@ -4,6 +4,8 @@ import io.github.softwarecats.uno.card.DrawTwoCard;
 import io.github.softwarecats.uno.card.NumberCard;
 import io.github.softwarecats.uno.card.WildCard;
 import io.github.softwarecats.uno.card.action.Action;
+import io.github.softwarecats.uno.card.action.EmptyAction;
+import lombok.NonNull;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -15,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ConcreteCardTest {
 
-    ConcreteCard concreteCard;
+    protected ConcreteCard concreteCard;
 
     @BeforeEach
     void setUp() {
@@ -26,8 +28,8 @@ class ConcreteCardTest {
             }
 
             @Override
-            public Action getAction() {
-                return null;
+            public @NonNull Action getAction() {
+                return EmptyAction.getInstance();
             }
 
             @Override
