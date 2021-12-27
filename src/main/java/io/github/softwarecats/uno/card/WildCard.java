@@ -22,6 +22,7 @@ import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.card.base.Color;
 import lombok.NonNull;
 import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import java.util.Optional;
 
@@ -31,6 +32,7 @@ import java.util.Optional;
 // TODO: Clear wildcard color as it goes into the draw pile.
 public class WildCard extends Card {
 
+    @Accessors(prefix = "current")
     @Setter
     protected Color currentColor;
 
