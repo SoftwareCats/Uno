@@ -16,17 +16,19 @@
 
 package io.github.softwarecats.uno.game;
 
+import io.github.softwarecats.uno.card.WildCard;
 import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.player.PlayerActor;
 import io.github.softwarecats.uno.player.controller.Controller;
 import io.github.softwarecats.uno.util.DeckBuilder;
-import lombok.Getter;
 
 import java.util.*;
 
 public class Round {
 
     protected final List<PlayerActor> players = new ArrayList<>();
+
+    protected final Random random;
 
     protected Deque<Card> drawPile;
 
@@ -37,6 +39,13 @@ public class Round {
     protected PlayDirection currentPlayDirection;
 
     public Round(Collection<Controller> controllers) {
+        this(controllers, new Random());
+    }
+
+    public Round(Collection<Controller> controllers, Random rng) {
+        // Initialize the random number generator.
+        random = rng;
+
         // Create players and deal 7 cards to them.
         List<Card> deck = DeckBuilder.getDeck();
         Collections.shuffle(deck);
@@ -50,13 +59,42 @@ public class Round {
                 i++;
             }
         }
-    }
 
-    public Round(Controller... controllers) {
-        this(List.of(controllers));
+        // Put remaining cards into the draw pile.
+        drawPile = new ArrayDeque<>(deck);
+
+        // Turn over the first card of draw pile to start the discard pile.
+        // Keep picking until the card is not a WildCard.
+        Card selectedCard = drawPile.removeFirst();
+        while (selectedCard.getColor().isEmpty()) {
+            drawPile.addLast(selectedCard);
+            selectedCard = drawPile.removeFirst();
+        }
+        discardPile.add(selectedCard);
+
+        // Initialize play direction with LEFT.
+        currentPlayDirection = PlayDirection.LEFT;
+
+        // Select a random player to start the round.
+        currentPlayerIndex = random.nextInt(0, players.size());
     }
 
     public void simulate() {
 
+    }
+
+    /**
+     * Sets the current player index.
+     * <p>
+     * This method is preferred compared to directly setting the {@link Round#currentPlayerIndex} because it
+     * automatically checks for {@link IndexOutOfBoundsException}.
+     *
+     * @param currentPlayerIndex the new index
+     */
+    public void setCurrentPlayerIndex(int currentPlayerIndex) {
+        if (currentPlayerIndex < 0 || currentPlayerIndex >= players.size()) {
+            throw new IndexOutOfBoundsException("Current player index must be within the bounds of the players list.");
+        }
+        this.currentPlayerIndex = currentPlayerIndex;
     }
 }
