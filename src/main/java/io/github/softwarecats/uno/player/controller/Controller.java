@@ -16,7 +16,12 @@
 
 package io.github.softwarecats.uno.player.controller;
 
+import io.github.softwarecats.uno.card.base.Card;
+import io.github.softwarecats.uno.player.Play;
 import io.github.softwarecats.uno.player.PlayerActor;
+import org.apache.commons.lang3.tuple.Pair;
+
+import java.beans.PropertyChangeEvent;
 
 /**
  * The abstract controller controlling the physical {@link io.github.softwarecats.uno.player.PlayerActor}.
@@ -26,6 +31,18 @@ import io.github.softwarecats.uno.player.PlayerActor;
 // TODO: It is the responsibility of the controller to recolor WildCards when they are played.
 public abstract class Controller {
 
-    protected PlayerActor playerActor;
+    protected int score;
 
+    public abstract Play onPlay(PlayerActor player);
+
+    public abstract Play onRenegingPlay(PlayerActor player, Pair<Card, Card> cardsDrawn);
+
+    public void onPossess(PlayerActor player) {
+    }
+
+    public void onDetach(PlayerActor player) {
+    }
+
+    public void onPropertyChange(PlayerActor player, PropertyChangeEvent evt) {
+    }
 }

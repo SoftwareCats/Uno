@@ -25,8 +25,8 @@ public abstract class ActionCard extends ConcreteCard {
     }
 
     @Override
-    public boolean canPlaceOn(Card card) {
-        return false;
+    public int pointValue() {
+        return 20;
     }
 
     @Override

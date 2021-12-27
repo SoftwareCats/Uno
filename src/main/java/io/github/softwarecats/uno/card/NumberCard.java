@@ -16,14 +16,16 @@
 
 package io.github.softwarecats.uno.card;
 
-import io.github.softwarecats.uno.card.base.Card;
+import io.github.softwarecats.uno.card.action.Action;
+import io.github.softwarecats.uno.card.action.EmptyAction;
 import io.github.softwarecats.uno.card.base.Color;
 import io.github.softwarecats.uno.card.base.ConcreteCard;
-import org.apache.commons.lang3.NotImplementedException;
+import io.github.softwarecats.uno.card.base.FaceNumerable;
+import lombok.NonNull;
 
 import java.util.Optional;
 
-public class NumberCard extends ConcreteCard {
+public class NumberCard extends ConcreteCard implements FaceNumerable {
 
     protected final int number;
 
@@ -33,16 +35,18 @@ public class NumberCard extends ConcreteCard {
     }
 
     @Override
-    public boolean canPlaceOn(Card card) {
-        throw new NotImplementedException();
+    public @NonNull Action getAction() {
+        // Number card has no action.
+        return EmptyAction.getInstance();
     }
 
     @Override
-    public void performAction() {
+    public int pointValue() {
+        return number;
     }
 
     @Override
-    public Optional<String> getFaceValue() {
-        return Optional.of(String.valueOf(number));
+    public Optional<Integer> getFaceNumber() {
+        return Optional.of(number);
     }
 }

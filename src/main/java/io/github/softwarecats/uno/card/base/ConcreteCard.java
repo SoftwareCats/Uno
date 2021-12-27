@@ -17,22 +17,55 @@
 package io.github.softwarecats.uno.card.base;
 
 import io.github.softwarecats.uno.card.WildCard;
+import lombok.NonNull;
+import org.apache.commons.lang3.NotImplementedException;
 
 import java.util.Optional;
 
 /**
- * Non-{@link WildCard} with a predetermined {@link Color} and FaceValue
+ * Non-{@link WildCard} with a predetermined {@link Color} and FaceValue.
  */
 public abstract class ConcreteCard extends Card {
 
+    @NonNull
     protected final Color color;
 
-    protected ConcreteCard(Color color) {
+    protected ConcreteCard(@NonNull Color color) {
         this.color = color;
     }
 
     @Override
     public Optional<Color> getColor() {
-        return Optional.ofNullable(color);
+        return Optional.of(color);
+    }
+
+    @Override
+    public boolean canPlaceOn(@NonNull Card other) {
+        // Validate color.
+        if (other.getColor().isEmpty()) {
+            throw new IllegalArgumentException("A WildCard must have a valid color when it is played.");
+        }
+
+        // Check color equality.
+        if (other.getColor().get() == color) {
+            return true;
+        }
+
+        // Validate FaceValue.
+        if (other.getFaceValue().isEmpty()) {
+            throw new IllegalArgumentException("All cards must have a valid FaceValue.");
+        }
+
+        if (getFaceValue().isEmpty()) {
+            throw new IllegalArgumentException("All cards must have a valid FaceValue.");
+        }
+
+        // Check FaceValue equality.
+        if (other.getFaceValue().get().equals(getFaceValue().get())) {
+            return true;
+        }
+
+        // The card is illegal if it does not match in color of FaceValue.
+        return false;
     }
 }

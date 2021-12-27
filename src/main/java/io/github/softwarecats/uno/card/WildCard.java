@@ -16,25 +16,43 @@
 
 package io.github.softwarecats.uno.card;
 
+import io.github.softwarecats.uno.card.action.Action;
+import io.github.softwarecats.uno.card.action.EmptyAction;
 import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.card.base.Color;
+import lombok.NonNull;
 import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import java.util.Optional;
 
+/**
+ * Non-{@link io.github.softwarecats.uno.card.base.ConcreteCard} with a variable {@link Color}.
+ */
 // TODO: Clear wildcard color as it goes into the draw pile.
 public class WildCard extends Card {
 
+    @Accessors(prefix = "current")
     @Setter
     protected Color currentColor;
 
     @Override
-    public boolean canPlaceOn(Card card) {
+    public boolean canPlaceOn(@NonNull Card other) {
         return true;
     }
 
+    public WildCard() {
+    }
+
     @Override
-    public void performAction() {
+    public @NonNull Action getAction() {
+        // WildCard has no action.
+        return EmptyAction.getInstance();
+    }
+
+    @Override
+    public int pointValue() {
+        return 50;
     }
 
     @Override
@@ -44,6 +62,6 @@ public class WildCard extends Card {
 
     @Override
     public Optional<String> getFaceValue() {
-        return Optional.empty();
+        return Optional.of(getClass().getSimpleName());
     }
 }
