@@ -26,7 +26,7 @@ import org.jetbrains.annotations.NotNull;
 @EqualsAndHashCode(callSuper = true)
 public class SkipCard extends ActionCard {
 
-    public SkipCard(Color color) {
+    public SkipCard(@NotNull Color color) {
         super(color);
     }
 
