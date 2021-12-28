@@ -9,6 +9,9 @@ import java.util.List;
 
 public class DeckBuilder {
 
+    private DeckBuilder() {
+    }
+
     public static List<Card> getDeck() {
         List<Card> deck = new ArrayList<>();
 
