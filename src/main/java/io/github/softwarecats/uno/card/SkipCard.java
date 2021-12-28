@@ -34,4 +34,9 @@ public class SkipCard extends ActionCard {
     public @NotNull Action getAction() {
         throw new NotImplementedException();
     }
+
+    @Override
+    public @NotNull String getFaceValue() {
+        return "Skip";
+    }
 }

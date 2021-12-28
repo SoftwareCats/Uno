@@ -24,8 +24,6 @@ import io.github.softwarecats.uno.card.base.FaceNumerable;
 import lombok.EqualsAndHashCode;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Optional;
-
 @EqualsAndHashCode(callSuper = true)
 public class NumberCard extends ConcreteCard implements FaceNumerable {
 
@@ -48,7 +46,7 @@ public class NumberCard extends ConcreteCard implements FaceNumerable {
     }
 
     @Override
-    public Optional<Integer> getFaceNumber() {
-        return Optional.of(number);
+    public int getFaceNumber() {
+        return number;
     }
 }

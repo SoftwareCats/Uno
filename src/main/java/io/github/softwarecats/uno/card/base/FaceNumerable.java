@@ -1,17 +1,13 @@
 package io.github.softwarecats.uno.card.base;
 
-import java.util.Optional;
+import org.jetbrains.annotations.NotNull;
 
 public interface FaceNumerable extends FaceValuable {
 
-    Optional<Integer> getFaceNumber();
+    int getFaceNumber();
 
     @Override
-    default Optional<String> getFaceValue(){
-        if (getFaceNumber().isPresent()) {
-            return Optional.of(String.valueOf(getFaceNumber().get()));
-        } else {
-            return Optional.empty();
-        }
+    default @NotNull String getFaceValue(){
+        return String.valueOf(getFaceNumber());
     }
 }

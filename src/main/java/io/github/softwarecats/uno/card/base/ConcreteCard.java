@@ -17,7 +17,9 @@
 package io.github.softwarecats.uno.card.base;
 
 import io.github.softwarecats.uno.card.WildCard;
+import lombok.AccessLevel;
 import lombok.EqualsAndHashCode;
+import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
@@ -26,14 +28,11 @@ import java.util.Optional;
  * Non-{@link WildCard} with a predetermined {@link Color} and FaceValue.
  */
 @EqualsAndHashCode(callSuper = true)
+@RequiredArgsConstructor(access = AccessLevel.PROTECTED)
 public abstract class ConcreteCard extends Card {
 
     @NotNull
     protected final Color color;
-
-    protected ConcreteCard(@NotNull Color color) {
-        this.color = color;
-    }
 
     @Override
     public Optional<Color> getColor() {
@@ -64,6 +63,6 @@ public abstract class ConcreteCard extends Card {
         // Check FaceValue equality.
         // We already know the cards don't match in color.
         // Therefore, the card is illegal if it does not match in FaceValue and vice versa.
-        return other.getFaceValue().get().equals(getFaceValue().get());
+        return other.getFaceValue().equals(getFaceValue());
     }
 }

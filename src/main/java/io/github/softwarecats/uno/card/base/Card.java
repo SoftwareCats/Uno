@@ -20,7 +20,7 @@ import io.github.softwarecats.uno.card.action.Action;
 import lombok.EqualsAndHashCode;
 import org.jetbrains.annotations.NotNull;
 
-@EqualsAndHashCode()
+@EqualsAndHashCode
 public abstract class Card implements Colorable, FaceValuable {
 
     public abstract boolean canPlaceOn(@NotNull Card card);

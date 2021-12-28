@@ -23,8 +23,8 @@ class ConcreteCardTest {
     void setUp() {
         concreteCard = new ConcreteCard(Color.RED) {
             @Override
-            public Optional<String> getFaceValue() {
-                return Optional.of("TestFaceValue");
+            public @NotNull String getFaceValue() {
+                return "TestFaceValue";
             }
 
             @Override
@@ -61,7 +61,7 @@ class ConcreteCardTest {
         // The placement test should return true for any color if face value is the same.
         for (Color color : Color.values()) {
             DrawTwoCard mockCard = Mockito.mock(DrawTwoCard.class);
-            Mockito.when(mockCard.getFaceValue()).thenReturn(Optional.of("TestFaceValue"));
+            Mockito.when(mockCard.getFaceValue()).thenReturn("TestFaceValue");
             Mockito.when(mockCard.getColor()).thenReturn(Optional.of(color));
 
             assertTrue(concreteCard.canPlaceOn(mockCard));
@@ -70,13 +70,13 @@ class ConcreteCardTest {
         // Error should be thrown if the other card has no valid FaceValue or Color.
         WildCard mockWildCard = Mockito.mock(WildCard.class);
         Mockito.when(mockWildCard.getColor()).thenReturn(Optional.empty());
-        Mockito.when(mockWildCard.getFaceValue()).thenReturn(Optional.of("WildCard"));
+        Mockito.when(mockWildCard.getFaceValue()).thenReturn("WildCard");
         assertThrows(IllegalArgumentException.class, () -> concreteCard.canPlaceOn(mockWildCard));
 
         for (Color color : Color.values()) {
             Card mockCard = Mockito.mock(Card.class);
             Mockito.when(mockCard.getColor()).thenReturn(Optional.of(color));
-            Mockito.when(mockCard.getFaceValue()).thenReturn(Optional.empty());
+            Mockito.when(mockCard.getFaceValue()).thenReturn("");
             assertThrows(IllegalArgumentException.class, () -> concreteCard.canPlaceOn(mockWildCard));
         }
     }

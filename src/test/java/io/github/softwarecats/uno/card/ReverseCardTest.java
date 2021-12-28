@@ -17,7 +17,7 @@ class ReverseCardTest {
 
     @Test
     void getFaceValue() {
-        assertEquals("ReverseCard", reverseCard.getFaceValue().orElseThrow());
+        assertEquals("Reverse", reverseCard.getFaceValue());
     }
 
     @Test

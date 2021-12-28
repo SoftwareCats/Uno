@@ -16,7 +16,7 @@ class WildDrawFourCardTest {
 
     @Test
     void getFaceValue() {
-        assertEquals("WildDrawFourCard", wdfCard.getFaceValue().orElseThrow());
+        assertEquals("WildDrawFour", wdfCard.getFaceValue());
     }
 
     @Test

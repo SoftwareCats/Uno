@@ -65,7 +65,7 @@ class WildCardTest {
 
     @Test
     void getFaceValue() {
-        assertEquals("WildCard", wildCard.getFaceValue().orElseThrow());
+        assertEquals("Wild", wildCard.getFaceValue());
     }
 
     @Test

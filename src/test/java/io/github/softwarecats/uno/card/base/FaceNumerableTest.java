@@ -9,29 +9,20 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FaceNumerableTest {
     
-    protected FaceNumerable illegalNumerable;
-    private FaceNumerable legalNumerable;
+    protected FaceNumerable numerable;
 
     @BeforeEach
     void setUp() {
-        illegalNumerable = new FaceNumerable() {
+        numerable = new FaceNumerable() {
             @Override
-            public Optional<Integer> getFaceNumber() {
-                return Optional.empty();
-            }
-        };
-
-        legalNumerable = new FaceNumerable() {
-            @Override
-            public Optional<Integer> getFaceNumber() {
-                return Optional.of(1);
+            public int getFaceNumber() {
+                return 1;
             }
         };
     }
 
     @Test
     void getFaceValue() {
-        assertTrue(illegalNumerable.getFaceValue().isEmpty());
-        assertEquals("1", legalNumerable.getFaceValue().orElseThrow());
+        assertEquals("1", numerable.getFaceValue());
     }
 }

@@ -37,7 +37,7 @@ class NumberCardTest {
         for (int i = 0; i <= 9; i++) {
             for (Color color : Color.values()) {
                 NumberCard currentCard = new NumberCard(color, i);
-                assertEquals(i, currentCard.getFaceNumber().orElseThrow());
+                assertEquals(i, currentCard.getFaceNumber());
             }
         }
     }
@@ -47,7 +47,7 @@ class NumberCardTest {
         for (int i = 0; i <= 9; i++) {
             for (Color color : Color.values()) {
                 NumberCard currentCard = new NumberCard(color, i);
-                assertEquals(String.valueOf(i), currentCard.getFaceValue().orElseThrow());
+                assertEquals(String.valueOf(i), currentCard.getFaceValue());
             }
         }
     }

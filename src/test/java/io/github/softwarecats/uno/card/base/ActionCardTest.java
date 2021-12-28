@@ -16,6 +16,11 @@ class ActionCardTest {
     void setUp() {
         actionCard = new ActionCard(Color.RED) {
             @Override
+            public @NotNull String getFaceValue() {
+                return "";
+            }
+
+            @Override
             public @NotNull Action getAction() {
                 return EmptyAction.getInstance();
             }

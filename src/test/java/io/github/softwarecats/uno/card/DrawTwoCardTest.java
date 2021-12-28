@@ -17,7 +17,7 @@ class DrawTwoCardTest {
 
     @Test
     void getFaceValue() {
-        assertEquals("DrawTwoCard", drawTwoCard.getFaceValue().orElseThrow());
+        assertEquals("DrawTwo", drawTwoCard.getFaceValue());
     }
 
     @Test

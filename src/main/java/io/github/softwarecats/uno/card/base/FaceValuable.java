@@ -16,10 +16,10 @@
 
 package io.github.softwarecats.uno.card.base;
 
-import java.util.Optional;
+import org.jetbrains.annotations.NotNull;
 
 public interface FaceValuable {
 
-    Optional<String> getFaceValue();
+    @NotNull String getFaceValue();
 
 }

@@ -19,8 +19,6 @@ package io.github.softwarecats.uno.card.base;
 import lombok.EqualsAndHashCode;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Optional;
-
 @EqualsAndHashCode(callSuper = true)
 public abstract class ActionCard extends ConcreteCard {
 
@@ -31,10 +29,5 @@ public abstract class ActionCard extends ConcreteCard {
     @Override
     public int pointValue() {
         return 20;
-    }
-
-    @Override
-    public Optional<String> getFaceValue() {
-        return Optional.of(getClass().getSimpleName());
     }
 }

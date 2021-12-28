@@ -21,6 +21,7 @@ import io.github.softwarecats.uno.card.action.EmptyAction;
 import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.card.base.Color;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 import org.jetbrains.annotations.NotNull;
@@ -33,14 +34,12 @@ import java.util.Optional;
  * Non-{@link io.github.softwarecats.uno.card.base.ConcreteCard} with a variable {@link Color}.
  */
 @EqualsAndHashCode(callSuper = true)
+@NoArgsConstructor
 public class WildCard extends Card {
 
     @Accessors(prefix = "current")
     @Setter
     protected Color currentColor;
-
-    public WildCard() {
-    }
 
     @Override
     public boolean canPlaceOn(@NotNull Card other) {
@@ -64,7 +63,7 @@ public class WildCard extends Card {
     }
 
     @Override
-    public Optional<String> getFaceValue() {
-        return Optional.of(getClass().getSimpleName());
+    public @NotNull String getFaceValue() {
+        return "Wild";
     }
 }

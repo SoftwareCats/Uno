@@ -17,7 +17,7 @@ class SkipCardTest {
 
     @Test
     void getFaceValue() {
-        assertEquals("SkipCard", skipCard.getFaceValue().orElseThrow());
+        assertEquals("Skip", skipCard.getFaceValue());
     }
 
     @Test
