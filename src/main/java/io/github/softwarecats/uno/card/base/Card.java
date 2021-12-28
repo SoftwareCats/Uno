@@ -18,15 +18,14 @@ package io.github.softwarecats.uno.card.base;
 
 import io.github.softwarecats.uno.card.action.Action;
 import lombok.EqualsAndHashCode;
-import lombok.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 @EqualsAndHashCode()
 public abstract class Card implements Colorable, FaceValuable {
 
-    public abstract boolean canPlaceOn(@NonNull Card card);
+    public abstract boolean canPlaceOn(@NotNull Card card);
 
-    @NonNull
-    public abstract Action getAction();
+    public abstract @NotNull Action getAction();
 
     public abstract int pointValue();
 }

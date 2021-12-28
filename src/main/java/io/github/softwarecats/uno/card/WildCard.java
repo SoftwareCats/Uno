@@ -21,13 +21,14 @@ import io.github.softwarecats.uno.card.action.EmptyAction;
 import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.card.base.Color;
 import lombok.EqualsAndHashCode;
-import lombok.NonNull;
 import lombok.Setter;
 import lombok.experimental.Accessors;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
 
 // TODO: Clear wildcard color as it goes into the draw pile.
+
 /**
  * Non-{@link io.github.softwarecats.uno.card.base.ConcreteCard} with a variable {@link Color}.
  */
@@ -38,16 +39,16 @@ public class WildCard extends Card {
     @Setter
     protected Color currentColor;
 
-    @Override
-    public boolean canPlaceOn(@NonNull Card other) {
-        return true;
-    }
-
     public WildCard() {
     }
 
     @Override
-    public @NonNull Action getAction() {
+    public boolean canPlaceOn(@NotNull Card other) {
+        return true;
+    }
+
+    @Override
+    public @NotNull Action getAction() {
         // WildCard has no action.
         return EmptyAction.getInstance();
     }

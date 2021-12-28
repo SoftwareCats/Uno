@@ -2,7 +2,7 @@ package io.github.softwarecats.uno.card.base;
 
 import io.github.softwarecats.uno.card.action.Action;
 import io.github.softwarecats.uno.card.action.EmptyAction;
-import lombok.NonNull;
+import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,7 +16,7 @@ class ActionCardTest {
     void setUp() {
         actionCard = new ActionCard(Color.RED) {
             @Override
-            public @NonNull Action getAction() {
+            public @NotNull Action getAction() {
                 return EmptyAction.getInstance();
             }
         };

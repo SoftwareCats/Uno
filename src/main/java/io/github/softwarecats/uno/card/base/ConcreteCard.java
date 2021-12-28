@@ -18,7 +18,7 @@ package io.github.softwarecats.uno.card.base;
 
 import io.github.softwarecats.uno.card.WildCard;
 import lombok.EqualsAndHashCode;
-import lombok.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
 
@@ -28,10 +28,10 @@ import java.util.Optional;
 @EqualsAndHashCode(callSuper = true)
 public abstract class ConcreteCard extends Card {
 
-    @NonNull
+    @NotNull
     protected final Color color;
 
-    protected ConcreteCard(@NonNull Color color) {
+    protected ConcreteCard(@NotNull Color color) {
         this.color = color;
     }
 
@@ -41,7 +41,7 @@ public abstract class ConcreteCard extends Card {
     }
 
     @Override
-    public boolean canPlaceOn(@NonNull Card other) {
+    public boolean canPlaceOn(@NotNull Card other) {
         // Validate color.
         if (other.getColor().isEmpty()) {
             throw new IllegalArgumentException("A WildCard must have a valid color when it is played.");

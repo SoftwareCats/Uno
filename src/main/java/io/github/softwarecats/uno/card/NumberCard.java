@@ -22,7 +22,7 @@ import io.github.softwarecats.uno.card.base.Color;
 import io.github.softwarecats.uno.card.base.ConcreteCard;
 import io.github.softwarecats.uno.card.base.FaceNumerable;
 import lombok.EqualsAndHashCode;
-import lombok.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
 
@@ -37,7 +37,7 @@ public class NumberCard extends ConcreteCard implements FaceNumerable {
     }
 
     @Override
-    public @NonNull Action getAction() {
+    public @NotNull Action getAction() {
         // Number card has no action.
         return EmptyAction.getInstance();
     }

@@ -21,12 +21,6 @@
       </list>
     </option>
   </component>
-  <component name="NullableNotNullManager">
-    <instrumentedNotNulls>
-      <option value="lombok.NonNull" />
-      <option value="org.jetbrains.annotations.NotNull" />
-    </instrumentedNotNulls>
-  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="Oracle JDK 17" project-jdk-type="JavaSDK" />
   <component name="SaveActionSettings">
     <option name="actions">
