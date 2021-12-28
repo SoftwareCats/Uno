@@ -14,13 +14,9 @@ public enum PlayDirection {
     }
 
     public PlayDirection getOpposite() {
-        switch (this) {
-            case LEFT:
-                return RIGHT;
-            case RIGHT:
-                return LEFT;
-            default:
-                throw new IllegalArgumentException();
-        }
+        return switch (this) {
+            case LEFT -> RIGHT;
+            case RIGHT -> LEFT;
+        };
     }
 }
