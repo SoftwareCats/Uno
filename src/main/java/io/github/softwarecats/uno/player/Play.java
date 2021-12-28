@@ -3,9 +3,9 @@ package io.github.softwarecats.uno.player;
 import io.github.softwarecats.uno.card.base.Card;
 import org.jetbrains.annotations.NotNull;
 
-public record Play(Card cardPlayed, @NotNull PlayerActor player) {
+public record Play(@NotNull PlayerActor player, Card cardPlayed) {
 
-    public static Play of(Card card, PlayerActor player) {
-        return new Play(card, player);
+    public static Play of(PlayerActor player, Card card) {
+        return new Play(player, card);
     }
 }
