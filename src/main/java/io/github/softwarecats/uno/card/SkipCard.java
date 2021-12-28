@@ -19,9 +19,11 @@ package io.github.softwarecats.uno.card;
 import io.github.softwarecats.uno.card.action.Action;
 import io.github.softwarecats.uno.card.base.ActionCard;
 import io.github.softwarecats.uno.card.base.Color;
+import lombok.EqualsAndHashCode;
 import lombok.NonNull;
 import org.apache.commons.lang3.NotImplementedException;
 
+@EqualsAndHashCode(callSuper = true)
 public class SkipCard extends ActionCard {
 
     public SkipCard(Color color) {

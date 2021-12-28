@@ -16,8 +16,11 @@
 
 package io.github.softwarecats.uno.card.base;
 
+import lombok.EqualsAndHashCode;
+
 import java.util.Optional;
 
+@EqualsAndHashCode(callSuper = true)
 public abstract class ActionCard extends ConcreteCard {
 
     protected ActionCard(Color color) {

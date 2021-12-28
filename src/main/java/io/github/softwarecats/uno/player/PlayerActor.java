@@ -28,12 +28,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+// TODO: Implement PropertyChangeSupport on the game.
 /**
  * The physical embodiment of an actor participating in a {@link io.github.softwarecats.uno.game.Game}.
  * <p>
  * Player data only exists across a single {@link io.github.softwarecats.uno.game.Round}.
  */
-// TODO: Implement PropertyChangeSupport on the game
 public class PlayerActor implements PropertyChangeListener {
 
     protected Controller controller;

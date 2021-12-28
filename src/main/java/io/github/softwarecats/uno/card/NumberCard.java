@@ -21,10 +21,12 @@ import io.github.softwarecats.uno.card.action.EmptyAction;
 import io.github.softwarecats.uno.card.base.Color;
 import io.github.softwarecats.uno.card.base.ConcreteCard;
 import io.github.softwarecats.uno.card.base.FaceNumerable;
+import lombok.EqualsAndHashCode;
 import lombok.NonNull;
 
 import java.util.Optional;
 
+@EqualsAndHashCode(callSuper = true)
 public class NumberCard extends ConcreteCard implements FaceNumerable {
 
     protected final int number;
