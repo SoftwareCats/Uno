@@ -20,8 +20,8 @@ import io.github.softwarecats.uno.card.action.Action;
 import io.github.softwarecats.uno.card.base.ActionCard;
 import io.github.softwarecats.uno.card.base.Color;
 import lombok.EqualsAndHashCode;
-import lombok.NonNull;
 import org.apache.commons.lang3.NotImplementedException;
+import org.jetbrains.annotations.NotNull;
 
 @EqualsAndHashCode(callSuper = true)
 public class DrawTwoCard extends ActionCard {
@@ -31,7 +31,7 @@ public class DrawTwoCard extends ActionCard {
     }
 
     @Override
-    public @NonNull Action getAction() {
+    public @NotNull Action getAction() {
         throw new NotImplementedException();
     }
 }

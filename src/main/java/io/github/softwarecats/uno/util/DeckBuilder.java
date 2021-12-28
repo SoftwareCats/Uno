@@ -3,7 +3,7 @@ package io.github.softwarecats.uno.util;
 import io.github.softwarecats.uno.card.*;
 import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.card.base.Color;
-import lombok.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -14,7 +14,7 @@ public class DeckBuilder {
     private DeckBuilder() {
     }
 
-    public static @NonNull List<Card> getDeck() {
+    public static @NotNull List<Card> getDeck() {
         List<Card> deck = new ArrayList<>();
 
         // Number cards.

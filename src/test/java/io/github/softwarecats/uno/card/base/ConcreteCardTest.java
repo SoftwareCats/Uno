@@ -5,7 +5,7 @@ import io.github.softwarecats.uno.card.NumberCard;
 import io.github.softwarecats.uno.card.WildCard;
 import io.github.softwarecats.uno.card.action.Action;
 import io.github.softwarecats.uno.card.action.EmptyAction;
-import lombok.NonNull;
+import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -28,7 +28,7 @@ class ConcreteCardTest {
             }
 
             @Override
-            public @NonNull Action getAction() {
+            public @NotNull Action getAction() {
                 return EmptyAction.getInstance();
             }
 
