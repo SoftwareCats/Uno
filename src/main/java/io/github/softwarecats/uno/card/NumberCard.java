@@ -31,7 +31,7 @@ public class NumberCard extends ConcreteCard implements FaceNumerable {
 
     protected final int number;
 
-    public NumberCard(Color color, int number) {
+    public NumberCard(@NotNull Color color, int number) {
         super(color);
         this.number = number;
     }

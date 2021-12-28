@@ -26,7 +26,7 @@ import org.jetbrains.annotations.NotNull;
 @EqualsAndHashCode(callSuper = true)
 public class DrawTwoCard extends ActionCard {
 
-    public DrawTwoCard(Color color) {
+    public DrawTwoCard(@NotNull Color color) {
         super(color);
     }
 

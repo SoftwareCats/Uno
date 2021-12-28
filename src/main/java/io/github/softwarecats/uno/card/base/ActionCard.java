@@ -17,13 +17,14 @@
 package io.github.softwarecats.uno.card.base;
 
 import lombok.EqualsAndHashCode;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
 
 @EqualsAndHashCode(callSuper = true)
 public abstract class ActionCard extends ConcreteCard {
 
-    protected ActionCard(Color color) {
+    protected ActionCard(@NotNull Color color) {
         super(color);
     }
 

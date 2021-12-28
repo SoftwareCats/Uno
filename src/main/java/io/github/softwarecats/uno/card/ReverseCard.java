@@ -26,7 +26,7 @@ import org.jetbrains.annotations.NotNull;
 @EqualsAndHashCode(callSuper = true)
 public class ReverseCard extends ActionCard {
 
-    public ReverseCard(Color color) {
+    public ReverseCard(@NotNull Color color) {
         super(color);
     }
 
