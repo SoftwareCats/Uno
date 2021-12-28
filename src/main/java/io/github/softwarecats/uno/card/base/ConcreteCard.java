@@ -17,14 +17,15 @@
 package io.github.softwarecats.uno.card.base;
 
 import io.github.softwarecats.uno.card.WildCard;
+import lombok.EqualsAndHashCode;
 import lombok.NonNull;
-import org.apache.commons.lang3.NotImplementedException;
 
 import java.util.Optional;
 
 /**
  * Non-{@link WildCard} with a predetermined {@link Color} and FaceValue.
  */
+@EqualsAndHashCode(callSuper = true)
 public abstract class ConcreteCard extends Card {
 
     @NonNull
@@ -61,11 +62,8 @@ public abstract class ConcreteCard extends Card {
         }
 
         // Check FaceValue equality.
-        if (other.getFaceValue().get().equals(getFaceValue().get())) {
-            return true;
-        }
-
-        // The card is illegal if it does not match in color of FaceValue.
-        return false;
+        // We already know the cards don't match in color.
+        // Therefore, the card is illegal if it does not match in FaceValue and vice versa.
+        return other.getFaceValue().get().equals(getFaceValue().get());
     }
 }

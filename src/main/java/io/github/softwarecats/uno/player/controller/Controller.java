@@ -23,12 +23,12 @@ import org.apache.commons.lang3.tuple.Pair;
 
 import java.beans.PropertyChangeEvent;
 
+// TODO: It is the responsibility of the controller to recolor WildCards when they are played.
 /**
  * The abstract controller controlling the physical {@link io.github.softwarecats.uno.player.PlayerActor}.
  * <p>
  * Controller data exists across the {@link io.github.softwarecats.uno.game.Game} session.
  */
-// TODO: It is the responsibility of the controller to recolor WildCards when they are played.
 public abstract class Controller {
 
     protected int score;

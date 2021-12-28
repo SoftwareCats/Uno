@@ -20,16 +20,18 @@ import io.github.softwarecats.uno.card.action.Action;
 import io.github.softwarecats.uno.card.action.EmptyAction;
 import io.github.softwarecats.uno.card.base.Card;
 import io.github.softwarecats.uno.card.base.Color;
+import lombok.EqualsAndHashCode;
 import lombok.NonNull;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import java.util.Optional;
 
+// TODO: Clear wildcard color as it goes into the draw pile.
 /**
  * Non-{@link io.github.softwarecats.uno.card.base.ConcreteCard} with a variable {@link Color}.
  */
-// TODO: Clear wildcard color as it goes into the draw pile.
+@EqualsAndHashCode(callSuper = true)
 public class WildCard extends Card {
 
     @Accessors(prefix = "current")
