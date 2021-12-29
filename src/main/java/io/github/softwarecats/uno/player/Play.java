@@ -1,11 +1,24 @@
 package io.github.softwarecats.uno.player;
 
 import io.github.softwarecats.uno.card.base.Card;
+import lombok.AllArgsConstructor;
+import lombok.Value;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
-public record Play(@NotNull PlayerActor player, Card cardPlayed) {
+import java.util.Optional;
 
-    public static Play of(PlayerActor player, Card card) {
-        return new Play(player, card);
+@Value
+@AllArgsConstructor(staticName = "of")
+public class Play {
+
+    @Nullable
+    Card card;
+
+    @NotNull
+    PlayerActor player;
+
+    public Optional<Card> getCard() {
+        return Optional.ofNullable(card);
     }
 }
