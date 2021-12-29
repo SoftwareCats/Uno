@@ -1,28 +1,23 @@
 package io.github.softwarecats.uno.card.action;
 
 import io.github.softwarecats.uno.game.Round;
+import lombok.*;
+import org.jetbrains.annotations.NotNull;
 
-public final class EmptyAction extends Action {
+/**
+ * Singleton representing an action that has no effect.
+ */
+@Value
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+@EqualsAndHashCode(callSuper = true)
+public class EmptyAction extends Action {
 
     /**
      * Static to class instance of the class.
      */
-    private static final EmptyAction INSTANCE = new EmptyAction();
-
-    /**
-     * Private constructor so nobody can instantiate the class.
-     */
-    private EmptyAction() {
-    }
-
-    /**
-     * To be called by user to get the only instance of the class.
-     *
-     * @return instance of the singleton
-     */
-    public static EmptyAction getInstance() {
-        return INSTANCE;
-    }
+    @Getter
+    @NotNull
+    private static final EmptyAction instance = new EmptyAction();
 
     @Override
     public void performAction(Round round) {
