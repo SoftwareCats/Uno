@@ -35,7 +35,7 @@ public abstract class ConcreteCard extends Card {
     protected final Color color;
 
     @Override
-    public Optional<Color> getColor() {
+    public @NotNull Optional<Color> getColor() {
         return Optional.of(color);
     }
 

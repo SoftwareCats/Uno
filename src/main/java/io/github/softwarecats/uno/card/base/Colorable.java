@@ -16,10 +16,12 @@
 
 package io.github.softwarecats.uno.card.base;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Optional;
 
 public interface Colorable {
 
-    Optional<Color> getColor();
+    @NotNull Optional<Color> getColor();
 
 }

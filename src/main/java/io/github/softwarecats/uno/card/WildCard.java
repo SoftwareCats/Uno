@@ -58,7 +58,7 @@ public class WildCard extends Card {
     }
 
     @Override
-    public Optional<Color> getColor() {
+    public @NotNull Optional<Color> getColor() {
         return Optional.ofNullable(currentColor);
     }
 
