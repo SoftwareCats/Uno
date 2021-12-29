@@ -80,4 +80,109 @@ class ConcreteCardTest {
             assertThrows(IllegalArgumentException.class, () -> concreteCard.canPlaceOn(mockWildCard));
         }
     }
+
+    @Test
+    void testEquals() {
+        // Reflexivity: x equals x
+        assertEquals(concreteCard, concreteCard);
+
+        // Symmetry: x.equals(y) must return the same result as y.equals(x)
+        ConcreteCard equalConcreteCard = new ConcreteCard(Color.RED) {
+            @Override
+            public @NotNull String getFaceValue() {
+                return "";
+            }
+
+            @Override
+            public @NotNull Action getAction() {
+                return EmptyAction.getInstance();
+            }
+
+            @Override
+            public int pointValue() {
+                return 0;
+            }
+        };
+
+        ConcreteCard unequalConcreteCard = new ConcreteCard(Color.BLUE) {
+            @Override
+            public @NotNull String getFaceValue() {
+                return "";
+            }
+
+            @Override
+            public @NotNull Action getAction() {
+                return EmptyAction.getInstance();
+            }
+
+            @Override
+            public int pointValue() {
+                return 0;
+            }
+        };
+
+        assertEquals(concreteCard.equals(equalConcreteCard), equalConcreteCard.equals(concreteCard));
+        assertEquals(concreteCard.equals(unequalConcreteCard), unequalConcreteCard.equals(concreteCard));
+
+        // Transitivity: if x.equals(y) and y.equals(z) then also x.equals(z)
+        ConcreteCard y = new ConcreteCard(Color.RED) {
+            @Override
+            public @NotNull String getFaceValue() {
+                return "";
+            }
+
+            @Override
+            public @NotNull Action getAction() {
+                return EmptyAction.getInstance();
+            }
+
+            @Override
+            public int pointValue() {
+                return 0;
+            }
+        };
+
+        ConcreteCard z = new ConcreteCard(Color.RED) {
+            @Override
+            public @NotNull String getFaceValue() {
+                return "";
+            }
+
+            @Override
+            public @NotNull Action getAction() {
+                return EmptyAction.getInstance();
+            }
+
+            @Override
+            public int pointValue() {
+                return 0;
+            }
+        };
+
+        assertEquals(concreteCard, y);
+        assertEquals(y, z);
+        assertEquals(concreteCard, z);
+    }
+
+    @Test
+    void testHashCode() {
+        ConcreteCard equalConcreteCard = new ConcreteCard(Color.RED) {
+            @Override
+            public @NotNull String getFaceValue() {
+                return "";
+            }
+
+            @Override
+            public @NotNull Action getAction() {
+                return EmptyAction.getInstance();
+            }
+
+            @Override
+            public int pointValue() {
+                return 0;
+            }
+        };
+
+        assertEquals(equalConcreteCard.hashCode(), concreteCard.hashCode());
+    }
 }
