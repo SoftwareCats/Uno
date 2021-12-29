@@ -15,12 +15,12 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ConcreteCardTest {
+public class ConcreteCardTest {
 
     protected ConcreteCard concreteCard;
 
     @BeforeEach
-    void setUp() {
+    protected void setUp() {
         concreteCard = new ConcreteCard(Color.RED) {
             @Override
             public @NotNull String getFaceValue() {
@@ -40,12 +40,12 @@ class ConcreteCardTest {
     }
 
     @Test
-    void getColor() {
+    protected void getColor() {
         assertEquals(Color.RED, concreteCard.getColor().orElse(null));
     }
 
     @Test
-    void canPlaceOn() {
+    protected void canPlaceOn() {
         // The placement test should return true for any face value if color is same.
         for (int i = 0; i <= 9; i++) {
             assertTrue(concreteCard.canPlaceOn(new NumberCard(Color.RED, i)));
@@ -70,7 +70,7 @@ class ConcreteCardTest {
         // Error should be thrown if the other card has no valid FaceValue or Color.
         WildCard mockWildCard = Mockito.mock(WildCard.class);
         Mockito.when(mockWildCard.getColor()).thenReturn(Optional.empty());
-        Mockito.when(mockWildCard.getFaceValue()).thenReturn("WildCard");
+        Mockito.when(mockWildCard.getFaceValue()).thenReturn("Wild");
         assertThrows(IllegalArgumentException.class, () -> concreteCard.canPlaceOn(mockWildCard));
 
         for (Color color : Color.values()) {
@@ -82,7 +82,7 @@ class ConcreteCardTest {
     }
 
     @Test
-    void testEquals() {
+    protected void testEquals() {
         // Reflexivity: x equals x
         assertEquals(concreteCard, concreteCard);
 
@@ -165,7 +165,7 @@ class ConcreteCardTest {
     }
 
     @Test
-    void testHashCode() {
+    protected void testHashCode() {
         ConcreteCard equalConcreteCard = new ConcreteCard(Color.RED) {
             @Override
             public @NotNull String getFaceValue() {
